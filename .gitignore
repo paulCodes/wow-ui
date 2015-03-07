@@ -1,3 +1,13 @@
 BlizzardError.exe
 Data/
-Screanshots/
+Screenshots/
+.agent.db
+.build.info
+.curseclient
+.patch.result
+Cache/
+Errors/
+Launcher.db
+Logs/
+Utils/
+Wow.mfil

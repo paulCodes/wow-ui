@@ -39,9 +39,9 @@ Postal3DB = {
 	},
 	["profileKeys"] = {
 		["Poobear - Azshara"] = "Poobear - Azshara",
-		["Equalswise - Demon Soul"] = "Equalswise - Demon Soul",
-		["Roguejutsu - Gorefiend"] = "Roguejutsu - Gorefiend",
 		["Kodaver - Zul'jin"] = "Kodaver - Zul'jin",
+		["Roguejutsu - Gorefiend"] = "Roguejutsu - Gorefiend",
+		["Equalswise - Demon Soul"] = "Equalswise - Demon Soul",
 		["Dentisthulk - Azgalor"] = "Dentisthulk - Azgalor",
 		["Programmadin - Azgalor"] = "Programmadin - Azgalor",
 		["Locklobster - Demon Soul"] = "Locklobster - Demon Soul",
@@ -54,7 +54,7 @@ Postal3DB = {
 		["Beohulf - Zul'jin"] = "Beohulf - Zul'jin",
 		["Rastaferal - Magtheridon"] = "Rastaferal - Magtheridon",
 		["Lobesofgold - Zul'jin"] = "Lobesofgold - Zul'jin",
-		["Taeluh - Earthen Ring"] = "Taeluh - Earthen Ring",
+		["Kodejutsu - Ravencrest"] = "Kodejutsu - Ravencrest",
 		["Thorisdottir - Zul'jin"] = "Thorisdottir - Zul'jin",
 		["Kodepyre - Ravencrest"] = "Kodepyre - Ravencrest",
 		["Kodejukenbo - Azgalor"] = "Kodejukenbo - Azgalor",
@@ -67,17 +67,17 @@ Postal3DB = {
 		["Kodewild - Ravencrest"] = "Kodewild - Ravencrest",
 		["Codetrek - Zul'jin"] = "Codetrek - Zul'jin",
 		["Kodejutsu - Earthen Ring"] = "Kodejutsu - Earthen Ring",
-		["Kodejutsu - Ravencrest"] = "Kodejutsu - Ravencrest",
+		["Taeluh - Earthen Ring"] = "Taeluh - Earthen Ring",
 		["Kodethar - Zul'jin"] = "Kodethar - Zul'jin",
 	},
 	["profiles"] = {
 		["Poobear - Azshara"] = {
 		},
-		["Equalswise - Demon Soul"] = {
+		["Kodaver - Zul'jin"] = {
 		},
 		["Roguejutsu - Gorefiend"] = {
 		},
-		["Kodaver - Zul'jin"] = {
+		["Equalswise - Demon Soul"] = {
 		},
 		["Dentisthulk - Azgalor"] = {
 		},
@@ -176,12 +176,7 @@ Postal3DB = {
 				},
 			},
 		},
-		["Taeluh - Earthen Ring"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Kodesmash|Earthen Ring|Alliance", -- [1]
-				},
-			},
+		["Kodejutsu - Ravencrest"] = {
 		},
 		["Thorisdottir - Zul'jin"] = {
 			["BlackBook"] = {
@@ -264,7 +259,12 @@ Postal3DB = {
 				},
 			},
 		},
-		["Kodejutsu - Ravencrest"] = {
+		["Taeluh - Earthen Ring"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Kodesmash|Earthen Ring|Alliance", -- [1]
+				},
+			},
 		},
 		["Kodethar - Zul'jin"] = {
 			["BlackBook"] = {

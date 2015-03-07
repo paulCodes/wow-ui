@@ -1,0 +1,34 @@
+------------------------------------------------------------------------
+r242 | abija | 2014-11-29 01:19:34 +0000 (Sat, 29 Nov 2014) | 1 line
+Changed paths:
+   A /tags/v.1.6.03.002 (from /trunk:241)
+
+Tagging as v.1.6.03.002
+------------------------------------------------------------------------
+r241 | abija | 2014-11-28 07:43:51 +0000 (Fri, 28 Nov 2014) | 1 line
+Changed paths:
+   M /trunk/retmodule/rotation.lua
+
+- various rotation.lua fixes
+------------------------------------------------------------------------
+r240 | abija | 2014-11-26 10:12:05 +0000 (Wed, 26 Nov 2014) | 1 line
+Changed paths:
+   M /trunk/retmodule/rotation.lua
+
+retmodule: fix 2x how
+------------------------------------------------------------------------
+r238 | abija | 2014-11-23 17:36:09 +0000 (Sun, 23 Nov 2014) | 4 lines
+Changed paths:
+   M /trunk/retmodule/rotation.lua
+
+cremor's WoD changes
+empowered seals 
+try empowered seals with something like 
+es eds5 tv_dp_4s eds5_fv tv5 ds5 eds_4s how cs emp_sot_exp emp_sor_exp j exo emp_sot_return tv4 tv3
+------------------------------------------------------------------------
+r237 | abija | 2014-10-17 07:10:56 +0000 (Fri, 17 Oct 2014) | 1 line
+Changed paths:
+   M /trunk/retmodule/rotation.lua
+
+- retmodule: ds_4t16_aw
+------------------------------------------------------------------------

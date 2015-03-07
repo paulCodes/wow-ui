@@ -2,14 +2,14 @@
 TellMeWhenDB = {
 	["profileKeys"] = {
 		["Equalswise - Demon Soul"] = "Equalswise - Demon Soul",
-		["Skjöldrhulf - Zul'jin"] = "Skjöldrhulf - Zul'jin",
+		["Kodehirrim - Ravencrest"] = "Kodehirrim - Ravencrest",
 		["Poobear - Azshara"] = "Poobear - Azshara",
 		["Roguejutsu - Gorefiend"] = "Roguejutsu - Gorefiend",
 		["Programmadin - Azgalor"] = "Programmadin - Azgalor",
 		["Locklobster - Demon Soul"] = "Locklobster - Demon Soul",
 		["Kodehardcash - Ravencrest"] = "Kodehardcash - Ravencrest",
 		["Kodesmash - Earthen Ring"] = "Kodesmash - Earthen Ring",
-		["Kodehirrim - Ravencrest"] = "Kodehirrim - Ravencrest",
+		["Skjöldrhulf - Zul'jin"] = "Skjöldrhulf - Zul'jin",
 		["Kodejutsu - Ravencrest"] = "Kodejutsu - Ravencrest",
 		["Kodescope - Earthen Ring"] = "Kodescope - Earthen Ring",
 		["Kodehirrim - Earthen Ring"] = "Kodehirrim - Earthen Ring",
@@ -18,7 +18,7 @@ TellMeWhenDB = {
 		["Kodejukenbo - Azgalor"] = "Kodejukenbo - Azgalor",
 		["Taeluh - Earthen Ring"] = "Taeluh - Earthen Ring",
 		["Kodefoo - Demon Soul"] = "Kodefoo - Demon Soul",
-		["Kodepyre - Ravencrest"] = "Kodepyre - Ravencrest",
+		["Dentisthulk - Azgalor"] = "Dentisthulk - Azgalor",
 		["Nemitsneaky - Zul'jin"] = "Nemitsneaky - Zul'jin",
 		["Wrothblargh - Zul'jin"] = "Wrothblargh - Zul'jin",
 		["Kodescream - Zul'jin"] = "Kodescream - Zul'jin",
@@ -29,7 +29,7 @@ TellMeWhenDB = {
 		["Kodewild - Ravencrest"] = "Kodewild - Ravencrest",
 		["Codetrek - Zul'jin"] = "Codetrek - Zul'jin",
 		["Kodejutsu - Earthen Ring"] = "Kodejutsu - Earthen Ring",
-		["Dentisthulk - Azgalor"] = "Dentisthulk - Azgalor",
+		["Kodepyre - Ravencrest"] = "Kodepyre - Ravencrest",
 		["Kodethar - Zul'jin"] = "Kodethar - Zul'jin",
 	},
 	["global"] = {
@@ -66,23 +66,23 @@ TellMeWhenDB = {
 			[137452] = 2,
 			[34889] = 2,
 			[40120] = 2,
-			[118922] = 2,
+			[182057] = 2,
 			[168811] = 2,
 			[33763] = 2,
-			[182057] = 2,
+			[118922] = 2,
 			[128943] = 2,
-			[165961] = 2,
-			[1850] = 2,
 			[173584] = 1,
+			[1850] = 2,
+			[165961] = 2,
 			[19506] = 2,
 			[23161] = 2,
 			[93435] = 1,
 			[103582] = 1,
-			[17] = 2,
+			[130] = 2,
 			[108843] = 2,
 			[1126] = 2,
 			[165962] = 2,
-			[1953] = 2,
+			[119415] = 2,
 			[159678] = 2,
 			[768] = 2,
 			[155347] = 2,
@@ -111,8 +111,8 @@ TellMeWhenDB = {
 			[85499] = 2,
 			[115295] = 2,
 			[117952] = 2,
-			[119415] = 2,
-			[130] = 2,
+			[1953] = 2,
+			[17] = 2,
 		},
 	},
 	["Version"] = 72415,
@@ -126,18 +126,17 @@ TellMeWhenDB = {
 			},
 			["Version"] = 71101,
 		},
-		["Skjöldrhulf - Zul'jin"] = {
-			["Locked"] = true,
+		["Kodehirrim - Ravencrest"] = {
 			["Groups"] = {
 				{
-					["GUID"] = "TMW:group:1Jult8iWAt5y",
+					["GUID"] = "TMW:group:1JfD6YGV7aLp",
 					["Point"] = {
-						["y"] = -79.999971836806,
-						["x"] = 0.499938099646577,
+						["y"] = -74.4999950965868,
+						["x"] = 1.00004023313425,
 					},
 				}, -- [1]
 			},
-			["Version"] = 72101,
+			["Version"] = 70090,
 		},
 		["Poobear - Azshara"] = {
 			["Locked"] = true,
@@ -205,17 +204,18 @@ TellMeWhenDB = {
 			},
 			["Version"] = 70090,
 		},
-		["Kodehirrim - Ravencrest"] = {
+		["Skjöldrhulf - Zul'jin"] = {
+			["Locked"] = true,
 			["Groups"] = {
 				{
-					["GUID"] = "TMW:group:1JfD6YGV7aLp",
+					["GUID"] = "TMW:group:1Jult8iWAt5y",
 					["Point"] = {
-						["y"] = -74.4999950965868,
-						["x"] = 1.00004023313425,
+						["y"] = -79.999971836806,
+						["x"] = 0.499938099646577,
 					},
 				}, -- [1]
 			},
-			["Version"] = 70090,
+			["Version"] = 72101,
 		},
 		["Kodejutsu - Ravencrest"] = {
 			["Version"] = 70206,
@@ -245,7 +245,7 @@ TellMeWhenDB = {
 			["Version"] = 72415,
 		},
 		["Kodehirrim - Earthen Ring"] = {
-			["Locked"] = true,
+			["NumGroups"] = 5,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1JfD6YGh9Vuw",
@@ -254,111 +254,111 @@ TellMeWhenDB = {
 						["x"] = -1.85956814517705,
 					},
 					["Scale"] = 1.61333703994751,
-					["Tree1"] = false,
-					["Icons"] = {
-						{
-							["Enabled"] = true,
-							["ShowTimer"] = true,
-							["ShowTimerTextnoOCC"] = true,
-							["UnAlpha"] = 0.8,
-							["Name"] = "Crusader Strike",
-							["Type"] = "cooldown",
-							["ShowWhen"] = 3,
-							["ShowTimerText"] = true,
-							["Conditions"] = {
-								{
-									["Type"] = "SPELLCD",
-									["Level"] = 1.7,
-									["Name"] = "Crusader Strike",
-									["Operator"] = "<=",
-								}, -- [1]
-								["n"] = 1,
-							},
-						}, -- [1]
-						{
-							["Enabled"] = true,
-							["ShowTimer"] = true,
-							["ShowTimerTextnoOCC"] = true,
-							["UnAlpha"] = 0.8,
-							["Name"] = "Judgment",
-							["Type"] = "cooldown",
-							["ShowWhen"] = 3,
-							["ShowTimerText"] = true,
-							["Conditions"] = {
-								{
-									["Type"] = "SPELLCD",
-									["Level"] = 3.1,
-									["Name"] = "Judgment",
-									["Operator"] = "<=",
-								}, -- [1]
-								["n"] = 1,
-							},
-						}, -- [2]
-						{
-							["Enabled"] = true,
-							["ShowTimer"] = true,
-							["ShowTimerTextnoOCC"] = true,
-							["UnAlpha"] = 0.8,
-							["Name"] = "Avenger's Shield",
-							["Type"] = "cooldown",
-							["ShowTimerText"] = true,
-							["Conditions"] = {
-								{
-									["Type"] = "SPELLCD",
-									["Level"] = 2,
-									["Name"] = "Avenger's Shield",
-									["Operator"] = "<=",
-								}, -- [1]
-								["n"] = 1,
-							},
-							["DurationMin"] = 2,
-							["ShowWhen"] = 3,
-						}, -- [3]
-						{
-							["Enabled"] = true,
-							["ShowTimer"] = true,
-							["ShowTimerTextnoOCC"] = true,
-							["UnAlpha"] = 0.8,
-							["Name"] = "Consecration",
-							["Type"] = "cooldown",
-							["ShowWhen"] = 3,
-							["ShowTimerText"] = true,
-							["Conditions"] = {
-								{
-									["Type"] = "SPELLCD",
-									["Level"] = 1.6,
-									["Name"] = "Consecration",
-									["Operator"] = "<=",
-								}, -- [1]
-								["n"] = 1,
-							},
-						}, -- [4]
-						{
-							["Enabled"] = true,
-							["ShowTimer"] = true,
-							["ShowTimerTextnoOCC"] = true,
-							["UnAlpha"] = 0.8,
-							["Name"] = "Holy Wrath",
-							["Type"] = "cooldown",
-							["ShowWhen"] = 3,
-							["ShowTimerText"] = true,
-							["Conditions"] = {
-								{
-									["Type"] = "SPELLCD",
-									["Level"] = 1.5,
-									["Name"] = "Holy Wrath",
-									["Operator"] = "<=",
-								}, -- [1]
-								["n"] = 1,
-							},
-						}, -- [5]
-					},
 					["Role"] = 4,
 					["PrimarySpec"] = false,
-					["Tree3"] = false,
-					["Name"] = "prot-basic-spells",
-					["Columns"] = 5,
 					["OnlyInCombat"] = true,
+					["Columns"] = 5,
+					["Tree1"] = false,
+					["Name"] = "prot-basic-spells",
+					["Tree3"] = false,
+					["Icons"] = {
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["Conditions"] = {
+								{
+									["Type"] = "SPELLCD",
+									["Operator"] = "<=",
+									["Name"] = "Crusader Strike",
+									["Level"] = 1.7,
+								}, -- [1]
+								["n"] = 1,
+							},
+							["ShowTimerText"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "Crusader Strike",
+							["ShowWhen"] = 3,
+							["Enabled"] = true,
+							["UnAlpha"] = 0.8,
+						}, -- [1]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["Conditions"] = {
+								{
+									["Type"] = "SPELLCD",
+									["Operator"] = "<=",
+									["Name"] = "Judgment",
+									["Level"] = 3.1,
+								}, -- [1]
+								["n"] = 1,
+							},
+							["ShowTimerText"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "Judgment",
+							["ShowWhen"] = 3,
+							["Enabled"] = true,
+							["UnAlpha"] = 0.8,
+						}, -- [2]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerText"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "Avenger's Shield",
+							["DurationMin"] = 2,
+							["ShowWhen"] = 3,
+							["Enabled"] = true,
+							["UnAlpha"] = 0.8,
+							["Conditions"] = {
+								{
+									["Type"] = "SPELLCD",
+									["Operator"] = "<=",
+									["Name"] = "Avenger's Shield",
+									["Level"] = 2,
+								}, -- [1]
+								["n"] = 1,
+							},
+						}, -- [3]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["Conditions"] = {
+								{
+									["Type"] = "SPELLCD",
+									["Operator"] = "<=",
+									["Name"] = "Consecration",
+									["Level"] = 1.6,
+								}, -- [1]
+								["n"] = 1,
+							},
+							["ShowTimerText"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "Consecration",
+							["ShowWhen"] = 3,
+							["Enabled"] = true,
+							["UnAlpha"] = 0.8,
+						}, -- [4]
+						{
+							["ShowTimer"] = true,
+							["Type"] = "cooldown",
+							["Conditions"] = {
+								{
+									["Type"] = "SPELLCD",
+									["Operator"] = "<=",
+									["Name"] = "Holy Wrath",
+									["Level"] = 1.5,
+								}, -- [1]
+								["n"] = 1,
+							},
+							["ShowTimerText"] = true,
+							["ShowTimerTextnoOCC"] = true,
+							["Name"] = "Holy Wrath",
+							["ShowWhen"] = 3,
+							["Enabled"] = true,
+							["UnAlpha"] = 0.8,
+						}, -- [5]
+					},
 				}, -- [1]
 				{
 					["GUID"] = "TMW:group:1JfD6YGhHSQP",
@@ -366,25 +366,25 @@ TellMeWhenDB = {
 						["y"] = -58.7345809519333,
 						["x"] = -65.602204724502,
 					},
-					["Columns"] = 1,
-					["Name"] = "hammer of wrath",
 					["Scale"] = 2.07501363754272,
+					["OnlyInCombat"] = true,
+					["Columns"] = 1,
 					["Tree1"] = false,
+					["Name"] = "hammer of wrath",
 					["Icons"] = {
 						{
-							["Enabled"] = true,
 							["Type"] = "reactive",
-							["ShowTimerText"] = true,
-							["RangeCheck"] = true,
 							["Name"] = "Hammer of Wrath",
+							["ShowTimerText"] = true,
 							["CooldownCheck"] = true,
+							["RangeCheck"] = true,
+							["Enabled"] = true,
 							["UseActvtnOverlay"] = true,
 						}, -- [1]
 					},
-					["OnlyInCombat"] = true,
 				}, -- [2]
 				{
-					["GUID"] = "TMW:group:1Jt7XPaXy85x",
+					["View"] = "bar",
 					["Point"] = {
 						["y"] = -171.721489095572,
 						["x"] = -244.52154469422,
@@ -393,94 +393,96 @@ TellMeWhenDB = {
 					},
 					["Scale"] = 1.27186596393585,
 					["Rows"] = 5,
-					["Alpha"] = 0.9,
+					["OnlyInCombat"] = true,
+					["Enabled"] = false,
+					["Columns"] = 1,
 					["Icons"] = {
 						{
-							["Enabled"] = true,
 							["ShowTimer"] = true,
-							["ShowTimerTextnoOCC"] = true,
-							["RangeCheck"] = true,
-							["UnAlpha"] = 0.8,
-							["Name"] = "Execution Sentence",
+							["Type"] = "cooldown",
 							["Conditions"] = {
 								{
 									["Type"] = "SPELLCD",
-									["Level"] = 5.9,
-									["Name"] = "Execution Sentence",
 									["Operator"] = "<=",
+									["Name"] = "Execution Sentence",
+									["Level"] = 5.9,
 								}, -- [1]
 								["n"] = 1,
 							},
-							["Type"] = "cooldown",
+							["Name"] = "Execution Sentence",
+							["ShowTimerTextnoOCC"] = true,
 							["ShowWhen"] = 3,
+							["RangeCheck"] = true,
+							["Enabled"] = true,
+							["UnAlpha"] = 0.8,
 						}, -- [1]
 						{
-							["Enabled"] = true,
 							["Type"] = "cooldown",
-							["Name"] = "Divine Protection",
 							["ShowTimerText"] = true,
-							["RangeCheck"] = true,
-							["ShowWhen"] = 3,
+							["Name"] = "Divine Protection",
 							["UnAlpha"] = 0.8,
+							["ShowWhen"] = 3,
+							["RangeCheck"] = true,
+							["Enabled"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "SPELLCD",
-									["Level"] = 3,
-									["Name"] = "Divine Protection",
 									["Operator"] = ">=",
+									["Name"] = "Divine Protection",
+									["Level"] = 3,
 								}, -- [1]
 								["n"] = 1,
 							},
 						}, -- [2]
 						{
-							["Enabled"] = true,
 							["Type"] = "cooldown",
-							["Name"] = "Avenging Wrath",
 							["ShowTimerText"] = true,
-							["RangeCheck"] = true,
-							["ShowWhen"] = 3,
+							["Name"] = "Avenging Wrath",
 							["UnAlpha"] = 0.8,
+							["ShowWhen"] = 3,
+							["RangeCheck"] = true,
+							["Enabled"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "SPELLCD",
-									["Level"] = 4,
-									["Name"] = "Avenging Wrath",
 									["Operator"] = "<=",
+									["Name"] = "Avenging Wrath",
+									["Level"] = 4,
 								}, -- [1]
 								["n"] = 1,
 							},
 						}, -- [3]
 						{
-							["Enabled"] = true,
 							["Type"] = "cooldown",
-							["Name"] = "Guardian of Ancient Kings",
 							["ShowTimerText"] = true,
-							["UnAlpha"] = 0.8,
+							["Name"] = "Guardian of Ancient Kings",
 							["ShowWhen"] = 3,
+							["Enabled"] = true,
+							["UnAlpha"] = 0.8,
 							["Conditions"] = {
 								{
 									["Type"] = "SPELLCD",
-									["Level"] = 1.8,
-									["Name"] = "Consecration",
 									["Operator"] = "<=",
+									["Name"] = "Consecration",
+									["Level"] = 1.8,
 								}, -- [1]
 								["n"] = 1,
 							},
 						}, -- [4]
 						{
 							["Type"] = "buff",
-							["Name"] = "Exorcism",
 							["Conditions"] = {
 								{
 									["Type"] = "SPELLCD",
-									["Level"] = 1.6,
-									["Name"] = "Exorcism",
 									["Operator"] = "<=",
+									["Name"] = "Exorcism",
+									["Level"] = 1.6,
 								}, -- [1]
 								["n"] = 1,
 							},
-							["ShowWhen"] = 3,
 							["ShowTimerText"] = true,
+							["ShowWhen"] = 3,
+							["Name"] = "Exorcism",
 						}, -- [5]
 					},
 					["Name"] = "bars",
@@ -489,10 +491,8 @@ TellMeWhenDB = {
 							["SizeX"] = 178.280426025391,
 						},
 					},
-					["Enabled"] = false,
-					["Columns"] = 1,
-					["View"] = "bar",
-					["OnlyInCombat"] = true,
+					["GUID"] = "TMW:group:1Jt7XPaXy85x",
+					["Alpha"] = 0.9,
 				}, -- [3]
 				{
 					["GUID"] = "TMW:group:1KCBAw5oG3KH",
@@ -502,10 +502,18 @@ TellMeWhenDB = {
 					},
 					["Scale"] = 2.29998970031738,
 					["Columns"] = 1,
+					["Name"] = "holy power",
 					["Icons"] = {
 						{
-							["Enabled"] = true,
 							["Type"] = "conditionicon",
+							["Conditions"] = {
+								{
+									["Type"] = "HOLY_POWER",
+									["Operator"] = ">=",
+									["Level"] = 4,
+								}, -- [1]
+								["n"] = 1,
+							},
 							["SettingsPerView"] = {
 								["icon"] = {
 									["TextLayout"] = "icon2",
@@ -514,19 +522,11 @@ TellMeWhenDB = {
 									},
 								},
 							},
-							["Conditions"] = {
-								{
-									["Type"] = "HOLY_POWER",
-									["Level"] = 4,
-									["Operator"] = ">=",
-								}, -- [1]
-								["n"] = 1,
-							},
 							["CustomTex"] = "28793",
+							["Enabled"] = true,
 							["UnAlpha"] = 0.6,
 						}, -- [1]
 					},
-					["Name"] = "holy power",
 				}, -- [4]
 				{
 					["GUID"] = "TMW:group:1KTzesM0dp=S",
@@ -535,108 +535,108 @@ TellMeWhenDB = {
 						["x"] = -3.12514454127199,
 					},
 					["Scale"] = 1.59998679161072,
+					["Role"] = 1,
+					["OnlyInCombat"] = true,
+					["Tree2"] = false,
+					["Columns"] = 3,
 					["Tree1"] = false,
+					["Name"] = "ret-basic-spells",
 					["Icons"] = {
 						{
-							["Enabled"] = true,
 							["ShowTimer"] = true,
-							["ShowTimerTextnoOCC"] = true,
-							["RangeCheck"] = true,
-							["UnAlpha"] = 0.8,
-							["Name"] = "Crusader Strike",
 							["Type"] = "cooldown",
-							["ShowWhen"] = 3,
-							["ShowTimerText"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "SPELLCD",
-									["Level"] = 1.7,
-									["Name"] = "Crusader Strike",
 									["Operator"] = "<=",
+									["Name"] = "Crusader Strike",
+									["Level"] = 1.7,
 								}, -- [1]
 								["n"] = 1,
 							},
+							["Name"] = "Crusader Strike",
+							["ShowTimerTextnoOCC"] = true,
+							["ShowTimerText"] = true,
+							["UnAlpha"] = 0.8,
+							["ShowWhen"] = 3,
+							["RangeCheck"] = true,
+							["Enabled"] = true,
 						}, -- [1]
 						{
-							["Enabled"] = true,
 							["ShowTimer"] = true,
-							["ShowTimerTextnoOCC"] = true,
-							["UnAlpha"] = 0.8,
-							["ShowTimerText"] = true,
 							["Type"] = "cooldown",
-							["ShowWhen"] = 3,
-							["Name"] = "Judgment",
 							["Conditions"] = {
 								{
 									["Type"] = "SPELLCD",
-									["Level"] = 3.1,
-									["Name"] = "Judgment",
 									["Operator"] = "<=",
+									["Name"] = "Judgment",
+									["Level"] = 3.1,
 								}, -- [1]
 								["n"] = 1,
 							},
+							["Name"] = "Judgment",
+							["ShowTimerTextnoOCC"] = true,
+							["ShowTimerText"] = true,
+							["ShowWhen"] = 3,
+							["Enabled"] = true,
+							["UnAlpha"] = 0.8,
 						}, -- [2]
 						{
-							["Enabled"] = true,
 							["ShowTimer"] = true,
-							["ShowTimerTextnoOCC"] = true,
-							["UnAlpha"] = 0.8,
-							["ShowTimerText"] = true,
 							["Type"] = "cooldown",
-							["ShowWhen"] = 3,
-							["Name"] = "Exorcism",
 							["Conditions"] = {
 								{
 									["Type"] = "SPELLCD",
-									["Level"] = 3,
-									["Name"] = "Exorcism",
 									["Operator"] = "<=",
+									["Name"] = "Exorcism",
+									["Level"] = 3,
 								}, -- [1]
 								["n"] = 1,
 							},
+							["Name"] = "Exorcism",
+							["ShowTimerTextnoOCC"] = true,
+							["ShowTimerText"] = true,
+							["ShowWhen"] = 3,
+							["Enabled"] = true,
+							["UnAlpha"] = 0.8,
 						}, -- [3]
 						{
-							["Enabled"] = true,
 							["ShowTimer"] = true,
-							["ShowTimerTextnoOCC"] = true,
-							["UnAlpha"] = 0.8,
-							["Name"] = "Execution Sentence",
 							["Type"] = "cooldown",
 							["Conditions"] = {
 								{
 									["Type"] = "SPELLCD",
-									["Level"] = 3,
-									["Name"] = "Execution Sentence",
 									["Operator"] = "<=",
+									["Name"] = "Execution Sentence",
+									["Level"] = 3,
 								}, -- [1]
 								{
 									["Type"] = "SPELLCD",
+									["Operator"] = "<=",
+									["Level"] = 3,
 									["Name"] = "Light's Hammer",
 									["AndOr"] = "OR",
-									["Level"] = 3,
-									["Operator"] = "<=",
 								}, -- [2]
 								["n"] = 2,
 							},
+							["Name"] = "Execution Sentence",
+							["ShowTimerTextnoOCC"] = true,
+							["ShowTimerText"] = true,
+							["UnAlpha"] = 0.8,
 							["ShowWhen"] = 3,
 							["CustomTex"] = "25956",
-							["ShowTimerText"] = true,
+							["Enabled"] = true,
 						}, -- [4]
 						{
-							["Enabled"] = true,
 							["Type"] = "cooldown",
+							["Enabled"] = true,
 						}, -- [5]
 					},
-					["Role"] = 1,
-					["Name"] = "ret-basic-spells",
-					["Tree2"] = false,
 					["SecondarySpec"] = false,
-					["Columns"] = 3,
-					["OnlyInCombat"] = true,
 				}, -- [5]
 			},
+			["Locked"] = true,
 			["Version"] = 72415,
-			["NumGroups"] = 5,
 		},
 		["Beohulf - Zul'jin"] = {
 			["Groups"] = {
@@ -692,20 +692,14 @@ TellMeWhenDB = {
 			},
 			["Version"] = 71101,
 		},
-		["Kodepyre - Ravencrest"] = {
+		["Dentisthulk - Azgalor"] = {
 			["Locked"] = true,
 			["Groups"] = {
 				{
-					["GUID"] = "TMW:group:1JfD6YGCd8WI",
-					["Point"] = {
-						["y"] = 120.999917438256,
-						["x"] = -150.000067893414,
-						["point"] = "BOTTOM",
-						["relativePoint"] = "BOTTOM",
-					},
+					["GUID"] = "TMW:group:1KFr8wiZCNwY",
 				}, -- [1]
 			},
-			["Version"] = 72415,
+			["Version"] = 71101,
 		},
 		["Nemitsneaky - Zul'jin"] = {
 			["Locked"] = true,
@@ -814,16 +808,23 @@ TellMeWhenDB = {
 				}, -- [1]
 			},
 		},
-		["Dentisthulk - Azgalor"] = {
+		["Kodepyre - Ravencrest"] = {
 			["Locked"] = true,
 			["Groups"] = {
 				{
-					["GUID"] = "TMW:group:1KFr8wiZCNwY",
+					["GUID"] = "TMW:group:1JfD6YGCd8WI",
+					["Point"] = {
+						["y"] = 120.999917438256,
+						["x"] = -150.000067893414,
+						["point"] = "BOTTOM",
+						["relativePoint"] = "BOTTOM",
+					},
 				}, -- [1]
 			},
-			["Version"] = 71101,
+			["Version"] = 72415,
 		},
 		["Kodethar - Zul'jin"] = {
+			["Locked"] = true,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1JfD6YGtI3C6",
@@ -833,7 +834,6 @@ TellMeWhenDB = {
 					},
 				}, -- [1]
 			},
-			["Locked"] = true,
 			["Version"] = 72415,
 		},
 	},

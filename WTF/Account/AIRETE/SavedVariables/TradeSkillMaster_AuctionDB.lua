@@ -18,12 +18,12 @@ TradeSkillMaster_AuctionDBDB = {
 		["Kodehirrim - Earthen Ring"] = "Default",
 		["Beohulf - Zul'jin"] = "Default",
 		["Squidprokode - Ravencrest"] = "Default",
-		["Wrothblargh - Zul'jin"] = "Default",
+		["Kodescream - Zul'jin"] = "Default",
 		["Taeluh - Earthen Ring"] = "Default",
-		["Lobesofgold - Zul'jin"] = "Default",
+		["Wrothblargh - Zul'jin"] = "Default",
 		["Kodescope - Earthen Ring"] = "Default",
 		["Nemitsneaky - Zul'jin"] = "Default",
-		["Kodescream - Zul'jin"] = "Default",
+		["Lobesofgold - Zul'jin"] = "Default",
 		["Kodepyre - Ravencrest"] = "Default",
 		["Thorisdottir - Zul'jin"] = "Default",
 		["Grimwroth - Gorefiend"] = "Default",
@@ -37,8 +37,8 @@ TradeSkillMaster_AuctionDBDB = {
 	},
 	["realm"] = {
 		["Zul'jin"] = {
-			["lastCompleteScan"] = 1425522678,
-			["appDataUpdate"] = 1425522678,
+			["lastCompleteScan"] = 1425706278,
+			["appDataUpdate"] = 1425706278,
 		},
 		["Earthen Ring"] = {
 			["lastCompleteScan"] = 1425356911,

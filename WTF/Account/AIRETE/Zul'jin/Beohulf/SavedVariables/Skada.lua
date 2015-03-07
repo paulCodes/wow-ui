@@ -1,5 +1,7 @@
 
 SkadaPerCharDB = {
+	["sets"] = {
+	},
 	["total"] = {
 		["healingabsorbed"] = 0,
 		["dispells"] = 0,
@@ -14,18 +16,16 @@ SkadaPerCharDB = {
 		},
 		["mobtaken"] = 0,
 		["healing"] = 0,
-		["multistrikes"] = 0,
+		["mobdone"] = 0,
 		["power"] = {
 		},
 		["overhealing"] = 0,
-		["shielding"] = 0,
+		["damagetaken"] = 0,
 		["name"] = "Total",
 		["starttime"] = 1422243167,
-		["damagetaken"] = 0,
+		["shielding"] = 0,
 		["mobhdone"] = 0,
 		["last_action"] = 1422243167,
-		["mobdone"] = 0,
-	},
-	["sets"] = {
+		["multistrikes"] = 0,
 	},
 }

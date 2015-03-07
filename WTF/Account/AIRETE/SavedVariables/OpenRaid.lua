@@ -3,13 +3,13 @@ OR_db = {
 	["Notes"] = {
 	},
 	["Options"] = {
-		["Auto enable accept"] = false,
+		["Specialnote"] = false,
 		["Automatically send requests"] = false,
-		["Auto enable sent"] = false,
+		["Tutorial"] = true,
 		["DontCheckForChar"] = false,
 		["Filter joined your group"] = false,
 		["Whisperword"] = false,
-		["Specialnote"] = false,
+		["Auto enable accept"] = false,
 		["Personal send message"] = "Adding you as friend for OpenRaid event %d named %s",
 		["Ignore when removing"] = {
 		},
@@ -19,7 +19,7 @@ OR_db = {
 		["Defaultpage"] = "Index",
 		["Clear raids after X days"] = false,
 		["Clean up time"] = 7,
-		["Tutorial"] = true,
+		["Auto enable sent"] = false,
 	},
 	["String"] = {
 	},

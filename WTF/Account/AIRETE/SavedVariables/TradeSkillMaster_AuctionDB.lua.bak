@@ -1,0 +1,48 @@
+
+TradeSkillMaster_AuctionDBDB = {
+	["realm"] = {
+		["Earthen Ring"] = {
+			["lastCompleteScan"] = 1425356911,
+			["appDataUpdate"] = 1425356911,
+		},
+		["Zul'jin"] = {
+			["lastCompleteScan"] = 1425706278,
+			["appDataUpdate"] = 1425706278,
+		},
+	},
+	["profileKeys"] = {
+		["Kodaver - Zul'jin"] = "Default",
+		["Hulfkwando - Zul'jin"] = "Default",
+		["Skjöldrhulf - Zul'jin"] = "Default",
+		["Taeluh - Earthen Ring"] = "Default",
+		["Kodehardcash - Ravencrest"] = "Default",
+		["Kodesmash - Earthen Ring"] = "Default",
+		["Kodehirrim - Ravencrest"] = "Default",
+		["Roguejutsu - Gorefiend"] = "Default",
+		["Kodefoo - Zul'jin"] = "Default",
+		["Kodehirrim - Earthen Ring"] = "Default",
+		["Beohulf - Zul'jin"] = "Default",
+		["Squidprokode - Ravencrest"] = "Default",
+		["Lobesofgold - Zul'jin"] = "Default",
+		["Kodejutsu - Ravencrest"] = "Default",
+		["Kodescream - Zul'jin"] = "Default",
+		["Kodescope - Earthen Ring"] = "Default",
+		["Nemitsneaky - Zul'jin"] = "Default",
+		["Wrothblargh - Zul'jin"] = "Default",
+		["Kodepyre - Ravencrest"] = "Default",
+		["Kodesmash - Ravencrest"] = "Default",
+		["Grimwroth - Gorefiend"] = "Default",
+		["Thorisdottir - Zul'jin"] = "Default",
+		["Skoldrhulf - Zul'jin"] = "Default",
+		["Kodewild - Ravencrest"] = "Default",
+		["Codetrek - Zul'jin"] = "Default",
+		["Kodejutsu - Earthen Ring"] = "Default",
+		["Skullnir - Zul'jin"] = "Default",
+		["Kodethar - Zul'jin"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["lastGetAll"] = 1392876842,
+		},
+	},
+}

@@ -3,7 +3,7 @@ HandyNotesDB = {
 	["profileKeys"] = {
 		["Equalswise - Demon Soul"] = "Equalswise - Demon Soul",
 		["Poobear - Azshara"] = "Poobear - Azshara",
-		["Kodejutsu - Ravencrest"] = "Kodejutsu - Ravencrest",
+		["Taeluh - Earthen Ring"] = "Taeluh - Earthen Ring",
 		["Programmadin - Azgalor"] = "Programmadin - Azgalor",
 		["Locklobster - Demon Soul"] = "Locklobster - Demon Soul",
 		["Kodehardcash - Ravencrest"] = "Kodehardcash - Ravencrest",
@@ -15,11 +15,11 @@ HandyNotesDB = {
 		["Beohulf - Zul'jin"] = "Beohulf - Zul'jin",
 		["Rastaferal - Magtheridon"] = "Rastaferal - Magtheridon",
 		["Nemitsneaky - Zul'jin"] = "Nemitsneaky - Zul'jin",
-		["Taeluh - Earthen Ring"] = "Taeluh - Earthen Ring",
+		["Kodejutsu - Ravencrest"] = "Kodejutsu - Ravencrest",
 		["Kodescream - Zul'jin"] = "Kodescream - Zul'jin",
 		["Kodepyre - Ravencrest"] = "Kodepyre - Ravencrest",
 		["Kodejukenbo - Azgalor"] = "Kodejukenbo - Azgalor",
-		["Wrothblargh - Zul'jin"] = "Wrothblargh - Zul'jin",
+		["Lobesofgold - Zul'jin"] = "Lobesofgold - Zul'jin",
 		["Thorisdottir - Zul'jin"] = "Thorisdottir - Zul'jin",
 		["Dentisthulk - Azgalor"] = "Dentisthulk - Azgalor",
 		["Rastabearian - Magtheridon"] = "Rastabearian - Magtheridon",
@@ -28,7 +28,7 @@ HandyNotesDB = {
 		["Kodewild - Ravencrest"] = "Kodewild - Ravencrest",
 		["Codetrek - Zul'jin"] = "Codetrek - Zul'jin",
 		["Kodejutsu - Earthen Ring"] = "Kodejutsu - Earthen Ring",
-		["Lobesofgold - Zul'jin"] = "Lobesofgold - Zul'jin",
+		["Wrothblargh - Zul'jin"] = "Wrothblargh - Zul'jin",
 		["Kodethar - Zul'jin"] = "Kodethar - Zul'jin",
 	},
 	["profiles"] = {
@@ -36,7 +36,7 @@ HandyNotesDB = {
 		},
 		["Poobear - Azshara"] = {
 		},
-		["Kodejutsu - Ravencrest"] = {
+		["Taeluh - Earthen Ring"] = {
 		},
 		["Programmadin - Azgalor"] = {
 		},
@@ -60,7 +60,7 @@ HandyNotesDB = {
 		},
 		["Nemitsneaky - Zul'jin"] = {
 		},
-		["Taeluh - Earthen Ring"] = {
+		["Kodejutsu - Ravencrest"] = {
 		},
 		["Kodescream - Zul'jin"] = {
 		},
@@ -68,7 +68,7 @@ HandyNotesDB = {
 		},
 		["Kodejukenbo - Azgalor"] = {
 		},
-		["Wrothblargh - Zul'jin"] = {
+		["Lobesofgold - Zul'jin"] = {
 		},
 		["Thorisdottir - Zul'jin"] = {
 		},
@@ -86,7 +86,7 @@ HandyNotesDB = {
 		},
 		["Kodejutsu - Earthen Ring"] = {
 		},
-		["Lobesofgold - Zul'jin"] = {
+		["Wrothblargh - Zul'jin"] = {
 		},
 		["Kodethar - Zul'jin"] = {
 		},
@@ -96,7 +96,7 @@ HandyNotes_HandyNotesDB = {
 	["profileKeys"] = {
 		["Equalswise - Demon Soul"] = "Equalswise - Demon Soul",
 		["Poobear - Azshara"] = "Poobear - Azshara",
-		["Kodejutsu - Ravencrest"] = "Kodejutsu - Ravencrest",
+		["Taeluh - Earthen Ring"] = "Taeluh - Earthen Ring",
 		["Programmadin - Azgalor"] = "Programmadin - Azgalor",
 		["Locklobster - Demon Soul"] = "Locklobster - Demon Soul",
 		["Kodehardcash - Ravencrest"] = "Kodehardcash - Ravencrest",
@@ -108,11 +108,11 @@ HandyNotes_HandyNotesDB = {
 		["Beohulf - Zul'jin"] = "Beohulf - Zul'jin",
 		["Rastaferal - Magtheridon"] = "Rastaferal - Magtheridon",
 		["Nemitsneaky - Zul'jin"] = "Nemitsneaky - Zul'jin",
-		["Taeluh - Earthen Ring"] = "Taeluh - Earthen Ring",
+		["Kodejutsu - Ravencrest"] = "Kodejutsu - Ravencrest",
 		["Kodescream - Zul'jin"] = "Kodescream - Zul'jin",
 		["Kodepyre - Ravencrest"] = "Kodepyre - Ravencrest",
 		["Kodejukenbo - Azgalor"] = "Kodejukenbo - Azgalor",
-		["Wrothblargh - Zul'jin"] = "Wrothblargh - Zul'jin",
+		["Lobesofgold - Zul'jin"] = "Lobesofgold - Zul'jin",
 		["Thorisdottir - Zul'jin"] = "Thorisdottir - Zul'jin",
 		["Dentisthulk - Azgalor"] = "Dentisthulk - Azgalor",
 		["Rastabearian - Magtheridon"] = "Rastabearian - Magtheridon",
@@ -121,7 +121,7 @@ HandyNotes_HandyNotesDB = {
 		["Kodewild - Ravencrest"] = "Kodewild - Ravencrest",
 		["Codetrek - Zul'jin"] = "Codetrek - Zul'jin",
 		["Kodejutsu - Earthen Ring"] = "Kodejutsu - Earthen Ring",
-		["Lobesofgold - Zul'jin"] = "Lobesofgold - Zul'jin",
+		["Wrothblargh - Zul'jin"] = "Wrothblargh - Zul'jin",
 		["Kodethar - Zul'jin"] = "Kodethar - Zul'jin",
 	},
 	["profiles"] = {
@@ -129,7 +129,7 @@ HandyNotes_HandyNotesDB = {
 		},
 		["Poobear - Azshara"] = {
 		},
-		["Kodejutsu - Ravencrest"] = {
+		["Taeluh - Earthen Ring"] = {
 		},
 		["Programmadin - Azgalor"] = {
 		},
@@ -153,7 +153,7 @@ HandyNotes_HandyNotesDB = {
 		},
 		["Nemitsneaky - Zul'jin"] = {
 		},
-		["Taeluh - Earthen Ring"] = {
+		["Kodejutsu - Ravencrest"] = {
 		},
 		["Kodescream - Zul'jin"] = {
 		},
@@ -161,7 +161,7 @@ HandyNotes_HandyNotesDB = {
 		},
 		["Kodejukenbo - Azgalor"] = {
 		},
-		["Wrothblargh - Zul'jin"] = {
+		["Lobesofgold - Zul'jin"] = {
 		},
 		["Thorisdottir - Zul'jin"] = {
 		},
@@ -179,7 +179,7 @@ HandyNotes_HandyNotesDB = {
 		},
 		["Kodejutsu - Earthen Ring"] = {
 		},
-		["Lobesofgold - Zul'jin"] = {
+		["Wrothblargh - Zul'jin"] = {
 		},
 		["Kodethar - Zul'jin"] = {
 		},

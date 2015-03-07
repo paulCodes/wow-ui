@@ -1,0 +1,62 @@
+
+AmrDb = {
+	["Talents"] = {
+	},
+	["LastCharacterImportDate"] = "",
+	["SendSettings"] = {
+		["SendTo"] = "",
+		["SendGems"] = true,
+		["SendEnchants"] = true,
+		["SendEnchantMaterials"] = true,
+		["SendToType"] = "a friend",
+	},
+	["CharacterName"] = "Lobesofgold",
+	["Race"] = "Goblin",
+	["ActiveSpec"] = 1,
+	["Level"] = 19,
+	["Equipped"] = {
+		{
+			nil, -- [1]
+			"|cff1eff00|Hitem:25438:0:0:0:0:0:0:877654272:19:0:0:0|h[Malachite Pendant]|h|r", -- [2]
+			nil, -- [3]
+			nil, -- [4]
+			"|cffffffff|Hitem:49275:0:0:0:0:0:0:0:19:0:0:0|h[Water-Stained Leather Harness]|h|r", -- [5]
+			"|cffffffff|Hitem:49271:0:0:0:0:0:0:0:19:0:0:0|h[Water-Stained Leather Belt]|h|r", -- [6]
+			"|cffffffff|Hitem:6835:0:0:0:0:0:0:2098293632:19:0:0:0|h[Black Tuxedo Pants]|h|r", -- [7]
+			"|cff1eff00|Hitem:2315:0:0:0:0:0:0:147023232:19:0:0:0|h[Dark Leather Boots]|h|r", -- [8]
+		}, -- [1]
+	},
+	["Specs"] = {
+	},
+	["Options"] = {
+	},
+	["Region"] = "US",
+	["Currencies"] = {
+	},
+	["Glyphs"] = {
+	},
+	["LogData"] = {
+		["_wipes"] = {
+		},
+		["_autoLog"] = {
+			[1228] = "disabled",
+			[1205] = "disabled",
+		},
+		["_lastDiff"] = 0,
+		["_lastZone"] = "Kalimdor",
+	},
+	["BagItems"] = {
+	},
+	["BankItems"] = {
+	},
+	["LastCharacterImport"] = "",
+	["Reps"] = {
+	},
+	["Faction"] = "Horde",
+	["IconInfo"] = {
+	},
+	["Professions"] = {
+	},
+	["RealmName"] = "Zul'jin",
+	["Class"] = "ROGUE",
+}

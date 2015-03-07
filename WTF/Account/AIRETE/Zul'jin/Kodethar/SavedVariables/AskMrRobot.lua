@@ -61,13 +61,7 @@ AmrDb = {
 			63090, -- [4]
 		}, -- [2]
 	},
-	["SendSettings"] = {
-		["SendTo"] = "",
-		["SendGems"] = true,
-		["SendEnchants"] = true,
-		["SendEnchantMaterials"] = true,
-		["SendToType"] = "a friend",
-	},
+	["Class"] = "MAGE",
 	["Specs"] = {
 		12, -- [1]
 		13, -- [2]
@@ -194,12 +188,66 @@ AmrDb = {
 	["Currencies"] = {
 		[402] = 15,
 		[361] = 1,
-		[416] = 2,
+		[391] = 21,
 		[515] = 84,
 		[392] = 577,
 		[81] = 6,
 		[-1] = 58179403,
-		[391] = 21,
+		[416] = 2,
+	},
+	["Region"] = "US",
+	["LogData"] = {
+		["_wipes"] = {
+		},
+		["_autoLog"] = {
+			[1228] = "disabled",
+			[1136] = "disabled",
+			[1205] = "disabled",
+		},
+		["_lastZone"] = "FW Horde Garrison Level 3",
+		["_lastDiff"] = 1,
+	},
+	["BagItems"] = {
+		"|cffffffff|Hitem:5512:0:0:0:0:0:0:0:90:0:5:0|h[Healthstone]|h|r", -- [1]
+		"|cffffffff|Hitem:20563:0:0:0:0:0:0:0:90:0:1:0|h[Night Elf Female Mask]|h|r", -- [2]
+		"|cff9d9d9d|Hitem:90556:0:0:0:0:0:0:0:90:0:0:0|h[A Steamy Romance Novel: I'm In Love With a Robot]|h|r", -- [3]
+		"|cffffffff|Hitem:34498:0:0:0:0:0:0:0:90:0:11:0|h[Paper Zeppelin Kit]|h|r", -- [4]
+		"|cffffffff|Hitem:87779:0:0:0:0:0:0:606241152:90:0:0:0|h[Ancient Guo-Lai Cache Key]|h|r", -- [5]
+		"|cffffffff|Hitem:84781:0:0:0:0:0:0:254495872:90:0:0:0|h[Shado-Pan Torch]|h|r", -- [6]
+		"|cffffffff|Hitem:72056:0:0:0:0:0:0:812284416:90:0:0:0|h[Plump Frogs]|h|r", -- [7]
+		"|cffffffff|Hitem:72018:0:0:0:0:0:0:1077158528:90:0:0:0|h[Discarded Weapon]|h|r", -- [8]
+		"|cffffffff|Hitem:38281:0:0:0:0:0:0:174644224:90:0:0:0|h[Direbrew's Dire Brew]|h|r", -- [9]
+		"|cffffffff|Hitem:71978:0:0:0:0:0:0:1402591104:90:0:0:0|h[Darkmoon Bandage]|h|r", -- [10]
+		"|cffffffff|Hitem:71634:0:0:0:0:0:0:869028992:90:0:0:0|h[Darkmoon Adventurer's Guide]|h|r", -- [11]
+		"|cffffffff|Hitem:97988:0:0:0:0:0:0:30130816:90:0:0:0|h[Paper-Covered Rock]|h|r", -- [12]
+		"|cffffffff|Hitem:97985:0:0:0:0:0:0:2141297792:90:0:0:0|h[Dusty Old Robot]|h|r", -- [13]
+		"|cffffffff|Hitem:103977:0:0:0:0:0:0:1701378304:90:0:0:0|h[Time-Worn Journal]|h|r", -- [14]
+		"|cffffffff|Hitem:6948:0:0:0:0:0:0:0:90:0:0:0|h[Hearthstone]|h|r", -- [15]
+		"|cffffffff|Hitem:34498:0:0:0:0:0:0:2063771008:90:0:0:0|h[Paper Zeppelin Kit]|h|r", -- [16]
+		"|cffffffff|Hitem:20815:0:0:0:0:0:0:0:90:0:0:0|h[Jeweler's Kit]|h|r", -- [17]
+		"|cffffffff|Hitem:81054:0:0:0:0:0:0:591674880:90:0:0:0|h[Kafa'kota Berry]|h|r", -- [18]
+		"|cffffffff|Hitem:85163:0:0:0:0:0:0:0:90:0:0:0|h[Bag of White Turnip Seeds]|h|r", -- [19]
+		"|cffffffff|Hitem:95449:0:0:0:0:0:0:0:90:0:0:0|h[Bag of Enigma Seeds]|h|r", -- [20]
+		"|cffffffff|Hitem:88375:0:0:0:0:0:0:415556832:90:0:0:0|h[Turnip Punching Bag]|h|r", -- [21]
+		"|cffffffff|Hitem:87226:0:0:0:0:0:0:1269110145:90:0:0:0|h[Banquet of the Grill]|h|r", -- [22]
+		"|cffffffff|Hitem:83080:0:0:0:0:0:0:0:90:0:0:0|h[Huojin Tabard]|h|r", -- [23]
+		"|cffffffff|Hitem:6365:0:0:0:0:0:0:0:90:0:0:0|h[Strong Fishing Pole]|h|r", -- [24]
+		"|cff1eff00|Hitem:104287:0:0:0:0:0:0:1158549120:90:0:0:0|h[Windfeather Plume]|h|r", -- [25]
+		"|cff1eff00|Hitem:104290:0:0:0:0:0:0:948198532:90:0:0:0|h[Sticky Silkworm Goo]|h|r", -- [26]
+		"|cff1eff00|Hitem:85264:0:0:0:0:0:0:586731520:90:0:0:0|h[Autumn Blossom Tree]|h|r", -- [27]
+		"|cff0070dd|Hitem:52723:0:0:0:0:0:0:580547456:90:0:0:0|h[Runed Elementium Rod]|h|r", -- [28]
+		"|cff0070dd|Hitem:37863:0:0:0:0:0:0:-2075017984:90:0:0:0|h[Direbrew's Remote]|h|r", -- [29]
+		"|cff0070dd|Hitem:86569:0:0:0:0:0:0:272839425:90:0:0:0|h[Crystal of Insanity]|h|r", -- [30]
+		"|cff0070dd|Hitem:81244:0:0:0:0:0:0:53967616:90:451:0:0|h[Cloak of Cleansing Flame]|h|r", -- [31]
+		"|cff0070dd|Hitem:86125:0:0:0:0:0:0:1265773952:90:0:0:0|h[Kafa Press]|h|r", -- [32]
+		"|cffa335ee|Hitem:105930:0:0:0:0:0:0:1295648384:90:0:0:0|h[Vision of Time]|h|r", -- [33]
+		"|cffa335ee|Hitem:104009:0:0:0:0:0:0:2027002752:90:0:0:0|h[Timeless Plate Armor Cache]|h|r", -- [34]
+		"|cffa335ee|Hitem:91562:0:0:0:0:0:0:0:90:479:0:0|h[Malevolent Gladiator's Emblem of Cruelty]|h|r", -- [35]
+		"|cffa335ee|Hitem:102273:0:0:0:0:0:0:2038147212:90:0:0:0|h[Timeless Mail Helm]|h|r", -- [36]
+		"|cffa335ee|Hitem:102323:0:0:0:0:0:0:1215815074:90:0:0:0|h[Timeless Mail Bracers]|h|r", -- [37]
+		"|cffa335ee|Hitem:95660:0:0:0:0:0:0:1822987520:90:465:0:0|h[Venomlord's Totemic Wand]|h|r", -- [38]
+	},
+	["IconInfo"] = {
 	},
 	["VoidItems"] = {
 		"|cffa335ee|Hitem:29986:0:0:0:0:0:0:2083808768:94:0:0:0|h[Cowl of the Grand Engineer]|h|r", -- [1]
@@ -287,60 +335,6 @@ AmrDb = {
 		"|cffa335ee|Hitem:77221:0:0:0:0:0:0:456603904:94:0:0:0|h[Lightning Rod]|h|r", -- [83]
 		"|cffa335ee|Hitem:49992:0:0:0:0:0:0:1390842368:94:0:0:0|h[Nibelung]|h|r", -- [84]
 	},
-	["LogData"] = {
-		["_wipes"] = {
-		},
-		["_autoLog"] = {
-			[1228] = "disabled",
-			[1136] = "disabled",
-			[1205] = "disabled",
-		},
-		["_lastDiff"] = 1,
-		["_lastZone"] = "FW Horde Garrison Level 3",
-	},
-	["BagItems"] = {
-		"|cffffffff|Hitem:5512:0:0:0:0:0:0:0:90:0:5:0|h[Healthstone]|h|r", -- [1]
-		"|cffffffff|Hitem:20563:0:0:0:0:0:0:0:90:0:1:0|h[Night Elf Female Mask]|h|r", -- [2]
-		"|cff9d9d9d|Hitem:90556:0:0:0:0:0:0:0:90:0:0:0|h[A Steamy Romance Novel: I'm In Love With a Robot]|h|r", -- [3]
-		"|cffffffff|Hitem:34498:0:0:0:0:0:0:0:90:0:11:0|h[Paper Zeppelin Kit]|h|r", -- [4]
-		"|cffffffff|Hitem:87779:0:0:0:0:0:0:606241152:90:0:0:0|h[Ancient Guo-Lai Cache Key]|h|r", -- [5]
-		"|cffffffff|Hitem:84781:0:0:0:0:0:0:254495872:90:0:0:0|h[Shado-Pan Torch]|h|r", -- [6]
-		"|cffffffff|Hitem:72056:0:0:0:0:0:0:812284416:90:0:0:0|h[Plump Frogs]|h|r", -- [7]
-		"|cffffffff|Hitem:72018:0:0:0:0:0:0:1077158528:90:0:0:0|h[Discarded Weapon]|h|r", -- [8]
-		"|cffffffff|Hitem:38281:0:0:0:0:0:0:174644224:90:0:0:0|h[Direbrew's Dire Brew]|h|r", -- [9]
-		"|cffffffff|Hitem:71978:0:0:0:0:0:0:1402591104:90:0:0:0|h[Darkmoon Bandage]|h|r", -- [10]
-		"|cffffffff|Hitem:71634:0:0:0:0:0:0:869028992:90:0:0:0|h[Darkmoon Adventurer's Guide]|h|r", -- [11]
-		"|cffffffff|Hitem:97988:0:0:0:0:0:0:30130816:90:0:0:0|h[Paper-Covered Rock]|h|r", -- [12]
-		"|cffffffff|Hitem:97985:0:0:0:0:0:0:2141297792:90:0:0:0|h[Dusty Old Robot]|h|r", -- [13]
-		"|cffffffff|Hitem:103977:0:0:0:0:0:0:1701378304:90:0:0:0|h[Time-Worn Journal]|h|r", -- [14]
-		"|cffffffff|Hitem:6948:0:0:0:0:0:0:0:90:0:0:0|h[Hearthstone]|h|r", -- [15]
-		"|cffffffff|Hitem:34498:0:0:0:0:0:0:2063771008:90:0:0:0|h[Paper Zeppelin Kit]|h|r", -- [16]
-		"|cffffffff|Hitem:20815:0:0:0:0:0:0:0:90:0:0:0|h[Jeweler's Kit]|h|r", -- [17]
-		"|cffffffff|Hitem:81054:0:0:0:0:0:0:591674880:90:0:0:0|h[Kafa'kota Berry]|h|r", -- [18]
-		"|cffffffff|Hitem:85163:0:0:0:0:0:0:0:90:0:0:0|h[Bag of White Turnip Seeds]|h|r", -- [19]
-		"|cffffffff|Hitem:95449:0:0:0:0:0:0:0:90:0:0:0|h[Bag of Enigma Seeds]|h|r", -- [20]
-		"|cffffffff|Hitem:88375:0:0:0:0:0:0:415556832:90:0:0:0|h[Turnip Punching Bag]|h|r", -- [21]
-		"|cffffffff|Hitem:87226:0:0:0:0:0:0:1269110145:90:0:0:0|h[Banquet of the Grill]|h|r", -- [22]
-		"|cffffffff|Hitem:83080:0:0:0:0:0:0:0:90:0:0:0|h[Huojin Tabard]|h|r", -- [23]
-		"|cffffffff|Hitem:6365:0:0:0:0:0:0:0:90:0:0:0|h[Strong Fishing Pole]|h|r", -- [24]
-		"|cff1eff00|Hitem:104287:0:0:0:0:0:0:1158549120:90:0:0:0|h[Windfeather Plume]|h|r", -- [25]
-		"|cff1eff00|Hitem:104290:0:0:0:0:0:0:948198532:90:0:0:0|h[Sticky Silkworm Goo]|h|r", -- [26]
-		"|cff1eff00|Hitem:85264:0:0:0:0:0:0:586731520:90:0:0:0|h[Autumn Blossom Tree]|h|r", -- [27]
-		"|cff0070dd|Hitem:52723:0:0:0:0:0:0:580547456:90:0:0:0|h[Runed Elementium Rod]|h|r", -- [28]
-		"|cff0070dd|Hitem:37863:0:0:0:0:0:0:-2075017984:90:0:0:0|h[Direbrew's Remote]|h|r", -- [29]
-		"|cff0070dd|Hitem:86569:0:0:0:0:0:0:272839425:90:0:0:0|h[Crystal of Insanity]|h|r", -- [30]
-		"|cff0070dd|Hitem:81244:0:0:0:0:0:0:53967616:90:451:0:0|h[Cloak of Cleansing Flame]|h|r", -- [31]
-		"|cff0070dd|Hitem:86125:0:0:0:0:0:0:1265773952:90:0:0:0|h[Kafa Press]|h|r", -- [32]
-		"|cffa335ee|Hitem:105930:0:0:0:0:0:0:1295648384:90:0:0:0|h[Vision of Time]|h|r", -- [33]
-		"|cffa335ee|Hitem:104009:0:0:0:0:0:0:2027002752:90:0:0:0|h[Timeless Plate Armor Cache]|h|r", -- [34]
-		"|cffa335ee|Hitem:91562:0:0:0:0:0:0:0:90:479:0:0|h[Malevolent Gladiator's Emblem of Cruelty]|h|r", -- [35]
-		"|cffa335ee|Hitem:102273:0:0:0:0:0:0:2038147212:90:0:0:0|h[Timeless Mail Helm]|h|r", -- [36]
-		"|cffa335ee|Hitem:102323:0:0:0:0:0:0:1215815074:90:0:0:0|h[Timeless Mail Bracers]|h|r", -- [37]
-		"|cffa335ee|Hitem:95660:0:0:0:0:0:0:1822987520:90:465:0:0|h[Venomlord's Totemic Wand]|h|r", -- [38]
-	},
-	["Professions"] = {
-	},
-	["LastCharacterImport"] = "",
 	["Reps"] = {
 		[1269] = 5,
 		[1337] = 3,
@@ -348,15 +342,21 @@ AmrDb = {
 		[1375] = 3,
 		[1387] = 0,
 		[1376] = 0,
-		[1270] = 4,
-		[1388] = 4,
 		[1435] = 4,
+		[1388] = 4,
+		[1270] = 4,
 	},
 	["Faction"] = "Horde",
-	["IconInfo"] = {
+	["Professions"] = {
 	},
-	["Region"] = "US",
-	["Class"] = "MAGE",
+	["LastCharacterImport"] = "",
+	["SendSettings"] = {
+		["SendTo"] = "",
+		["SendGems"] = true,
+		["SendEnchants"] = true,
+		["SendEnchantMaterials"] = true,
+		["SendToType"] = "a friend",
+	},
 	["BankItemsAndCounts"] = {
 		[73572] = 1,
 		[71421] = 1,
@@ -375,109 +375,109 @@ AmrDb = {
 		[33820] = 1,
 		[16913] = 1,
 		[71716] = 1,
-		[77938] = 1,
+		[70303] = 1,
 		[41968] = 1,
 		[24670] = 1,
 		[14178] = 1,
 		[3291] = 1,
 		[42111] = 1,
-		[52025] = 2,
 		[34753] = 5,
-		[45289] = 1,
-		[77098] = 1,
-		[78366] = 1,
+		[52025] = 2,
+		[42368] = 1,
+		[42103] = 1,
+		[42360] = 1,
 		[65376] = 1,
-		[24069] = 1,
-		[32353] = 1,
+		[28768] = 1,
+		[65904] = 1,
 		[40750] = 1,
 		[28633] = 1,
-		[71357] = 1,
-		[77234] = 1,
+		[118474] = 1,
+		[86124] = 1,
 		[69209] = 1,
-		[28768] = 1,
-		[10008] = 1,
-		[71011] = 1,
+		[24069] = 1,
+		[43584] = 1,
+		[77234] = 1,
 		[69622] = 1,
-		[51859] = 1,
-		[54506] = 1,
-		[77179] = 1,
 		[6563] = 1,
-		[114616] = 2,
-		[41949] = 1,
+		[10008] = 1,
 		[107397] = 1,
-		[71083] = 44,
-		[62386] = 1,
+		[14262] = 1,
+		[4307] = 1,
+		[41949] = 1,
+		[51859] = 1,
+		[77179] = 1,
+		[51337] = 1,
 		[23587] = 1,
-		[44668] = 1,
+		[9771] = 1,
 		[34607] = 1,
 		[56836] = 1,
-		[32587] = 1,
+		[80937] = 1,
 		[9767] = 1,
-		[9939] = 1,
-		[3310] = 1,
+		[8113] = 1,
+		[32446] = 10,
 		[8246] = 1,
-		[2316] = 1,
-		[80690] = 1,
-		[16918] = 1,
+		[44668] = 1,
+		[3308] = 1,
+		[41962] = 1,
 		[43156] = 1,
 		[114129] = 2,
 		[43164] = 1,
 		[45073] = 1,
 		[71989] = 1,
 		[67425] = 1,
-		[8113] = 1,
-		[30035] = 1,
-		[32446] = 10,
+		[78357] = 1,
+		[118354] = 1,
+		[30668] = 1,
 		[19438] = 1,
-		[43157] = 1,
+		[3309] = 1,
 		[25792] = 1,
-		[3308] = 1,
+		[78404] = 1,
 		[29987] = 1,
 		[44228] = 4,
 		[28594] = 1,
 		[21865] = 1,
 		[30884] = 1,
-		[81746] = 1,
-		[41962] = 1,
+		[114131] = 1,
+		[16918] = 1,
 		[30763] = 1,
-		[3309] = 1,
+		[27866] = 1,
 		[7470] = 1,
-		[81079] = 1,
+		[14121] = 1,
 		[29755] = 1,
 		[47447] = 1,
 		[49991] = 1,
 		[14119] = 1,
-		[78404] = 1,
-		[14121] = 1,
+		[80690] = 1,
+		[81079] = 1,
 		[31418] = 1,
 		[30912] = 1,
-		[27866] = 1,
-		[114131] = 1,
+		[43157] = 1,
+		[81746] = 1,
 		[109948] = 1,
 		[9936] = 1,
-		[30668] = 1,
-		[118354] = 1,
-		[78357] = 1,
+		[3310] = 1,
+		[30035] = 1,
+		[9939] = 1,
 		[9940] = 1,
 		[114822] = 1,
 		[32329] = 1,
 		[32585] = 1,
-		[80937] = 1,
-		[9771] = 1,
-		[51337] = 1,
-		[4307] = 1,
-		[14262] = 1,
+		[32587] = 1,
+		[2316] = 1,
+		[62386] = 1,
+		[114616] = 2,
+		[71083] = 44,
 		[43348] = 1,
 		[35097] = 1,
-		[43584] = 1,
-		[86124] = 1,
-		[118474] = 1,
-		[65904] = 1,
+		[54506] = 1,
+		[71011] = 1,
+		[71357] = 1,
+		[32353] = 1,
 		[45150] = 1,
-		[42360] = 1,
-		[42103] = 1,
-		[42368] = 1,
+		[78366] = 1,
+		[77098] = 1,
+		[45289] = 1,
 		[5202] = 1,
-		[70303] = 1,
+		[77938] = 1,
 	},
 }

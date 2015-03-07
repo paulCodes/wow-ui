@@ -1,0 +1,2 @@
+DuffedUI_Raid_Healing: disabled
+DuffedUI_Raid: enabled

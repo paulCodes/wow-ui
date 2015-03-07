@@ -1,0 +1,17 @@
+------------------------------------------------------------------------
+r244 | abija | 2015-02-02 21:45:17 +0000 (Mon, 02 Feb 2015) | 1 line
+Changed paths:
+   A /tags/v.1.6.03.003 (from /trunk:243)
+
+Tagging as v.1.6.03.003
+------------------------------------------------------------------------
+r243 | abija | 2015-01-31 20:18:43 +0000 (Sat, 31 Jan 2015) | 5 lines
+Changed paths:
+   M /trunk/retmodule/rotation.lua
+
+cremor's updates for retribution:
+
+* Fixed *_exec action for 2T17. Assuming the 2T17 buff will trigger IsUsableSpell(howId) (and I hope it will, otherwise we'll need more changes) this buff shouldn't trigger the *_exec actions. Therefore they now use target health instead of IsUsableSpell(howId).
+* Added support for 4T17 detection. Now exo_bc will be shown in the 2nd icon after how. This is done by scanning the equipped items in the PLAYER_EQUIPMENT_CHANGED event.
+* Added the GLYPH_REMOVED event because I noticed it was missing.
+------------------------------------------------------------------------

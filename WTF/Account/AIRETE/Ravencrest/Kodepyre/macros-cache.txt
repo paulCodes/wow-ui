@@ -1,0 +1,43 @@
+VER 3 0100000000000018 "boss2" "STAVE_2H_TARECGOSA_E_01STAGEFINAL"
+/tar burning tendon
+/stopmacro [noexists]
+/cast fireball
+END
+VER 3 0100000000000008 "Focus" "Ability_Ambush"
+/focus
+END
+VER 3 0100000000000014 "focus LB" "ABILITY_MAGE_LIVINGBOMB"
+/cast [target=focus] Living Bomb
+END
+VER 3 0100000000000019 "ice block" "SPELL_FROST_FROST"
+#showtooltip Ice block
+/stopcasting
+/cast Ice block
+/cancelaura [mod:shift] Ice block
+END
+VER 3 0100000000000017 "sit" "INV_MISC_QUESTIONMARK"
+/stopcasting
+/sit
+END
+VER 3 010000000000001A "Spine Macro" "SPELL_HOLY_CHAMPIONSBOND"
+/tar burning tendon
+/stopmacro [noexists]
+/cast arcane power
+/cast bottled wishes
+/use mana gem
+/cast arcane blast
+END
+VER 3 010000000000001B "test" "INV_WAND_1H_DEATHWINGRAID_D_01"
+/tar raider's training dummy
+/stopmacro [noexists]
+/cast arcane power
+/cast bottled wishes
+/use mana gem
+/cast arcane blast
+END
+VER 3 0100000000000015 "VuhDoDCShieldData" "Ability_Repair"
+P1HR1SH[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1LR[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]0__
+END
+VER 3 0100000000000016 "VuhDoDCShieldNames" "Ability_Repair"
+NKelJun[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Kod[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Xor
+END

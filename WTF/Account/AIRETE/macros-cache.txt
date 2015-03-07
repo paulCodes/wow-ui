@@ -1,0 +1,64 @@
+VER 3 0000000000000016 "applyDots" "SPELL_SHADOW_ABOMINATIONEXPLOSION"
+#showtooltip
+/castsequence reset=1 Agony, Corruption, Unstable Affliction
+END
+VER 3 0000000000000014 "AR" "INV_MISC_QUESTIONMARK"
+#showtooltip Adrenaline Rush
+/use Ruthless Gladiator's Badge of Conquest
+/cast Adrenaline Rush
+END
+VER 3 0000000000000002 "burning tendon" "ACHIEVEMENT_GUILDPERK_REINFORCE_RANK2"
+#showtooltip dark soul
+/cast dark soul
+/use 14
+END
+VER 3 0000000000000001 "Camera" "INV_Misc_QuestionMark"
+/console cameradistancemaxfactor 50
+END
+VER 3 0000000000000011 "Click Ultrax" "Ability_Rogue_EnvelopingShadows"
+/click ExtraActionButton1
+END
+VER 3 000000000000001A "follow" "INV_Belt_44A"
+END
+VER 3 0000000000000019 "interupt" "SPELL_SHADOW_MINDROT"
+#showtooltip
+/cast [@focus,exists][@target] Spell Lock
+END
+VER 3 0000000000000004 "Prospect" "INV_Misc_QuestionMark"
+#show
+/cast Prospecting
+/use Obsidium Ore
+/use Elementium Ore
+/use Pyrite Ore 
+END
+VER 3 0000000000000017 "soulshatter" "SPELL_ARCANE_ARCANE01"
+#showtooltip
+/stopcasting
+/cast Soulshatter
+END
+VER 3 0000000000000015 "soulshatterswap" "ABILITY_WARLOCK_SOULSWAP"
+#showtooltip Soul Swap
+/cast Soulburn
+/cast Soul Swap
+END
+VER 3 0000000000000036 "springs" "ACHIEVEMENT_GUILDPERK_MRPOPULARITY_RANK2"
+/use 10
+END
+VER 3 0000000000000018 "teleport" "SPELL_SHADOW_DEMONICCIRCLETELEPORT"
+#showtooltip
+/stopcasting
+/cast Demonic Circle: Teleport
+END
+VER 3 0000000000000035 "TSMAucBClick" "1"
+/click TSMAuctioningCancelButton
+/click TSMAuctioningPostButton
+END
+VER 3 000000000000002D "TSMDestroyer" "1"
+/tsm destroy
+END
+VER 3 000000000000002F "TSMUseDestroyer" "1"
+/click TSMDestroyingButton1
+END
+VER 3 000000000000002E "TSMUseDestroyer" "1"
+/click TSMDestroyingButton1
+END

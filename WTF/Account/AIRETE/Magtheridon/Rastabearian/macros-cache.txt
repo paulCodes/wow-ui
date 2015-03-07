@@ -1,0 +1,10 @@
+VER 3 0100000000F0BDC5 "Racial" "INV_Misc_QuestionMark"
+#show War Stomp
+/cast War Stomp
+END
+VER 3 0100000000F0BDC6 "VuhDoDCShieldData" "Ability_Hunter_FerociousInspiration"
+P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1SH[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 0100000000F0BDC7 "VuhDoDCShieldNames" "Ability_Hunter_FerociousInspiration"
+N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Ras[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END

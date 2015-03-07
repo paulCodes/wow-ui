@@ -1,0 +1,6 @@
+CLCRet: disabled
+CLCRet_Options: disabled
+MogIt_Sets: disabled
+OpenRaid: disabled
+TradeSkillMaster_AuctionDB: disabled
+ElvUI_Enhanced: disabled

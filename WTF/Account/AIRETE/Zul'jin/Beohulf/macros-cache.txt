@@ -1,0 +1,21 @@
+VER 3 0100000000000003 "bloodpetal" "ACHIEVEMENT_GUILDPERK_MASSRESURRECTION"
+/target Bloodpetal Seed ;
+/script SetRaidTarget("target", 8);
+END
+VER 3 0100000000000004 "divine shield" "SPELL_HOLY_DIVINESHIELD"
+#showtooltip Divine Shield
+/stopcasting
+/cast Divine Shield
+/cancelaura Divine Shield
+END
+VER 3 0100000000000005 "righteous fury" "SPELL_HOLY_SEALOFFURY"
+#showtooltip Righteous Fury
+/cancelaura Righteous Fury
+/cast Righteous Fury
+END
+VER 3 0100000000000001 "VuhDoDCShieldData" "Ability_Repair"
+P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1PT[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 0100000000000002 "VuhDoDCShieldNames" "Ability_Repair"
+N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Beo[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END

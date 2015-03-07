@@ -1,0 +1,5 @@
+VER 3 0100000000000001 "boom" "ABILITY_WARRIOR_WARCRY"
+/cast Presence of Mind
+/cast Alter Time
+/cast Pyroblast
+END

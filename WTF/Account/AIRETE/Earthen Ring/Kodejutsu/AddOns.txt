@@ -1,0 +1,4 @@
+Prat-3.0_Libraries: disabled
+BadPet: enabled
+DuffedUI: enabled
+TradeSkillMaster_AuctionDB: enabled

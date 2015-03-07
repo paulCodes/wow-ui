@@ -1,0 +1,12 @@
+Prat-3.0: disabled
+DuffedUI_Raid_Healing: disabled
+DuffedUI_Raid: enabled
+Prat-3.0_Libraries: disabled
+BadPet: enabled
+DuffedUI: enabled
+CLCRet: disabled
+CLCRet_Options: disabled
+MogIt_Sets: disabled
+OpenRaid: disabled
+TradeSkillMaster_AuctionDB: enabled
+ElvUI_Enhanced: disabled

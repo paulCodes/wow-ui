@@ -1,0 +1,6 @@
+
+DuffedUIConfigPrivate = {
+	["general"] = {
+		["classcolor"] = true,
+	},
+}

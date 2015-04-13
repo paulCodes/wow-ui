@@ -16,7 +16,7 @@ DBM_CORE_LOAD_SKIN_COMBAT			= "DBM timers failed to skin during combat. Your tim
 DBM_CORE_BAD_LOAD					= "DBM не удалось полностью загрузить модуль для этого подземелья, т.к. вы находитесь в режиме боя. Как только вы выйдите из боя, пожалуйста сделайте /console reloadui как можно скорее."
 DBM_CORE_LOAD_MOD_VER_MISMATCH		= "%s не может быть загружен потому что ваш DBM-Core не соответствует требованиям. Требуется обновленная версия."
 
-DBM_CORE_BLIZZ_BUGS					= "Обнаружены следующие баги с аддонами в 6.0:\n1. Если у вас включены звуковые эффекты, то звуки аддонов будут иногда пропадать в бою. Это происходит если одновременное количество звуковых эффектов превышает количество максимальных звуковых каналов (см. настройки звука). В патче 6.0 для звуков аддонов был установлен минимальный приоритет."
+--DBM_CORE_BLIZZ_BUGS					= "Обнаружены следующие баги с аддонами в 6.0:\n1. Если у вас включены звуковые эффекты, то звуки аддонов будут иногда пропадать в бою. Это происходит если одновременное количество звуковых эффектов превышает количество максимальных звуковых каналов (см. настройки звука). В патче 6.0 для звуков аддонов был установлен минимальный приоритет."
 
 DBM_CORE_DYNAMIC_DIFFICULTY_CLUMP	= "DBM отключил динамическое окно проверки дистанции на этом боссе, т.к. нет точной информации о необходимом количестве игроков в одном скоплении для рейда вашего размера."
 DBM_CORE_DYNAMIC_ADD_COUNT			= "DBM отключил предупреждения о появлении помощников на этом боссе, т.к. нет точной информации о количестве помощников, которые появляются в рейде вашего размера."
@@ -141,6 +141,7 @@ DBM_CORE_UPDATEREMINDER_FOOTER			= "Нажмите " .. (IsMacClient() and "Cmd-
 DBM_CORE_UPDATEREMINDER_FOOTER_GENERIC	= "Нажмите " .. (IsMacClient() and "Cmd-C" or "Ctrl-C")  ..  ", чтобы скопировать ссылку в буфер обмена."
 DBM_CORE_UPDATEREMINDER_DISABLE			= "ПРЕДУПРЕЖДЕНИЕ: В связи с тем, что Ваш Deadly Boss Mods сильно устарел (%d ревизий), он был отключен до обновления. Это сделано для того, чтобы старый и несовместимый код не вызывал плохой игровой опыт для Вас и других членов рейда."
 DBM_CORE_UPDATEREMINDER_HOTFIX			= "Ваша версия DBM будет иметь некорректные таймеры или предупреждения во время этого энкаунтера. Это исправлено в новой версии (или альфа-версии, если новая версия не доступна)"
+DBM_CORE_UPDATEREMINDER_HOTFIX_ALPHA	= DBM_CORE_UPDATEREMINDER_HOTFIX--TEMP, FIX ME!
 DBM_CORE_UPDATEREMINDER_MAJORPATCH		= "ПРЕДУПРЕЖДЕНИЕ: Из-за того, что ваш Deadly Boss Mods устарел, он был отключен до обновления, т.к. это большой игровой патч. Это необходимо для того, чтобы старый и несовместимый код не приводил к ухудшению игрового опыта для вас и членов вашего рейда. Убедитесь что вы скачали новую версию с deadlybossmods.com или curse.com как только она станет доступна."
 DBM_CORE_UPDATEREMINDER_TESTVERSION		= "WARNING: You are using a version of Deadly Boss Mods not intended to be used with this game version. Please make sure you download the appropriate version for your game client from deadlybossmods.com or curse."
 DBM_CORE_VEM							= "ПРЕДУПРЕЖДЕНИЕ: Вы используете Deadly Boss Mods и Voice Encounter Mods одновременно. DBM не был загружен, т.к. эти два аддона не могут работать вместе."
@@ -222,7 +223,7 @@ DBM_CORE_ACHIEVEMENT_TIMER_SPEED_KILL = "Достижение"
 
 -- Auto-generated Warning Localizations
 DBM_CORE_AUTO_ANNOUNCE_TEXTS.target 		= "%s на |3-5(>%%s<)"
-DBM_CORE_AUTO_ANNOUNCE_TEXTS.targetcount	= "%s (%%d) на |3-5(>%%s<)"
+DBM_CORE_AUTO_ANNOUNCE_TEXTS.targetcount	= "%s (%%s) на |3-5(>%%s<)"
 DBM_CORE_AUTO_ANNOUNCE_TEXTS.spell 			= "%s"
 DBM_CORE_AUTO_ANNOUNCE_TEXTS.ends			= "%s заканчивается"
 DBM_CORE_AUTO_ANNOUNCE_TEXTS.endtarget		= "%s заканчивается: >%%s<"
@@ -233,7 +234,7 @@ DBM_CORE_AUTO_ANNOUNCE_TEXTS.soon 			= "Скоро %s"
 DBM_CORE_AUTO_ANNOUNCE_TEXTS.prewarn 		= "%s через %s"
 DBM_CORE_AUTO_ANNOUNCE_TEXTS.phase 			= "Фаза %s"
 DBM_CORE_AUTO_ANNOUNCE_TEXTS.prephase 		= "Скоро фаза %s"
-DBM_CORE_AUTO_ANNOUNCE_TEXTS.count 			= "%s (%%d)"
+DBM_CORE_AUTO_ANNOUNCE_TEXTS.count 			= "%s (%%s)"
 DBM_CORE_AUTO_ANNOUNCE_TEXTS.stack 			= "%s на |3-5(>%%s<) (%%d)"
 
 local prewarnOption = "Предупреждать заранее о $spell:%s"
@@ -272,7 +273,7 @@ DBM_CORE_AUTO_SPEC_WARN_TEXTS.moveto			= "%s - бегите к >%%s<"
 DBM_CORE_AUTO_SPEC_WARN_TEXTS.run 				= "%s - убегайте"
 DBM_CORE_AUTO_SPEC_WARN_TEXTS.cast 				= "%s - прекратите чтение заклинаний"
 DBM_CORE_AUTO_SPEC_WARN_TEXTS.reflect 			= "%s на |3-5(>%%s<) - прекратите атаку"
-DBM_CORE_AUTO_SPEC_WARN_TEXTS.count 			= "%s! (%%d)"
+DBM_CORE_AUTO_SPEC_WARN_TEXTS.count 			= "%s! (%%s)"
 DBM_CORE_AUTO_SPEC_WARN_TEXTS.stack 			= "На вас %%d стаков от %s"
 DBM_CORE_AUTO_SPEC_WARN_TEXTS.switch 			= ">%s< - переключитесь"
 DBM_CORE_AUTO_SPEC_WARN_TEXTS.switchcount 		= ">%s< - переключитесь (%%d)"

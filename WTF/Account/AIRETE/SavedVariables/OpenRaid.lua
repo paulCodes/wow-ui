@@ -3,45 +3,45 @@ OR_db = {
 	["Notes"] = {
 	},
 	["Options"] = {
-		["Auto enable accept"] = false,
+		["Tutorial"] = true,
 		["Automatically send requests"] = false,
 		["Auto enable sent"] = false,
 		["DontCheckForChar"] = false,
-		["Filter joined your group"] = false,
+		["Clean up time"] = 7,
 		["Whisperword"] = false,
-		["Specialnote"] = false,
+		["Auto enable accept"] = false,
 		["Personal send message"] = "Adding you as friend for OpenRaid event %d named %s",
+		["Defaultpage"] = "Index",
+		["Filter have invited"] = true,
+		["Version"] = 2.1,
+		["Filter already in group"] = true,
 		["Ignore when removing"] = {
 		},
-		["Filter already in group"] = true,
-		["Version"] = 2.1,
-		["Filter have invited"] = true,
-		["Defaultpage"] = "Index",
 		["Clear raids after X days"] = false,
-		["Clean up time"] = 7,
-		["Tutorial"] = true,
+		["Filter joined your group"] = false,
+		["Specialnote"] = false,
 	},
-	["String"] = {
-	},
-	["Leader"] = {
+	["Raids"] = {
+		["Skjöldrhulf-Zul'jin"] = {
+		},
+		["Beohulf-Zul'jin"] = {
+		},
+		["Kodescream-Zul'jin"] = {
+		},
+		["Kodethar-Zul'jin"] = {
+		},
+		["Lobesofgold-Zul'jin"] = {
+		},
+		["Nemitsneaky-Zul'jin"] = {
+		},
 	},
 	["Rate"] = {
 		["Raid"] = {
 			["Name"] = "Raid",
 		},
 	},
-	["Raids"] = {
-		["Kodethar-Zul'jin"] = {
-		},
-		["Beohulf-Zul'jin"] = {
-		},
-		["Kodescream-Zul'jin"] = {
-		},
-		["Skjöldrhulf-Zul'jin"] = {
-		},
-		["Lobesofgold-Zul'jin"] = {
-		},
-		["Nemitsneaky-Zul'jin"] = {
-		},
+	["Leader"] = {
+	},
+	["String"] = {
 	},
 }

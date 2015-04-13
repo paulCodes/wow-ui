@@ -205,9 +205,14 @@ local function LoadSkin()
 	ReadyCheckFrameText:SetPoint("TOP", 0, -12)
 
 	-- others
-	ReadyCheckListenerFrame:SetAlpha(0)
-	ReadyCheckFrame:HookScript("OnShow", function(self) if UnitIsUnit("player", self.initiator) then self:Hide() end end) -- bug fix, don't show it if initiator
 	StackSplitFrame:GetRegions():Hide()
+	ReadyCheckListenerFrame:SetAlpha(0)
+	ReadyCheckFrame:HookScript("OnShow", function(self)
+		-- bug fix, don't show it if player is initiator
+		if self.initiator and UnitIsUnit("player", self.initiator) then
+			self:Hide()
+		end
+	end)
 
 
 	RolePollPopup:SetTemplate("Transparent")
@@ -822,11 +827,11 @@ local function LoadSkin()
         "UnitFramePanelArenaEnemyCastBar",
         "UnitFramePanelArenaEnemyPets",
         "UnitFramePanelFullSizeFocusFrame",
-		
+
 		--Assessability
 		"AccessibilityPanelMovePad",
 		"AccessibilityPanelColorblindMode",
-		
+
 		--Watev
 		"NamesPanelUnitNameplatesNameplateClassColors",
     }
@@ -873,10 +878,10 @@ local function LoadSkin()
         "LanguagesPanelLocaleDropDown",
         -- Status Text
         "StatusTextPanelDisplayDropDown",
-		
+
 		--Assess-ability
 		"AccessibilityPanelColorFilterDropDown",
-		
+
 		--Locales
 		"InterfaceOptionsLanguagesPanelAudioLocaleDropDown",
     }
@@ -921,7 +926,7 @@ local function LoadSkin()
         "AudioOptionsVoicePanelPushToTalkSound",
 		"AudioOptionsSoundPanelPetBattleMusic",
 		"AudioOptionsSoundPanelDialogSounds",
-		
+
         -- Network
         "NetworkOptionsPanelOptimizeSpeed",
         "NetworkOptionsPanelUseIPv6",
@@ -982,7 +987,7 @@ local function LoadSkin()
 		"Advanced_PostProcessAntiAliasingDropDown",
 		"Advanced_ResampleQualityDropDown",
 		"Advanced_MultisampleAntiAliasingDropDown",
-		
+
         -- Audio
         "AudioOptionsSoundPanelHardwareDropDown",
         "AudioOptionsSoundPanelSoundChannelsDropDown",
@@ -1155,6 +1160,7 @@ local function LoadSkin()
 	for i=1, MAX_ADDONS_DISPLAYED do
 		S:HandleCheckBox(_G["AddonListEntry"..i.."Enabled"])
 	end
+
 end
 
 S:RegisterSkin('ElvUI', LoadSkin)

@@ -125,7 +125,7 @@ end
 
 ElvUF.Tags.Events['health:current'] = 'UNIT_HEALTH_FREQUENT UNIT_MAXHEALTH UNIT_CONNECTION PLAYER_FLAGS_CHANGED'
 ElvUF.Tags.Methods['health:current'] = function(unit)
-	local status = UnitIsDead(unit) and DEAD or UnitIsGhost(unit) and L['Ghost'] or not UnitIsConnected(unit) and L['Offline']
+	local status = UnitIsDead(unit) and DEAD or UnitIsGhost(unit) and L["Ghost"] or not UnitIsConnected(unit) and L["Offline"]
 	if (status) then
 		return status
 	else
@@ -135,7 +135,7 @@ end
 
 ElvUF.Tags.Events['health:deficit'] = 'UNIT_HEALTH_FREQUENT UNIT_MAXHEALTH UNIT_CONNECTION PLAYER_FLAGS_CHANGED'
 ElvUF.Tags.Methods['health:deficit'] = function(unit)
-	local status = UnitIsDead(unit) and DEAD or UnitIsGhost(unit) and L['Ghost'] or not UnitIsConnected(unit) and L['Offline']
+	local status = UnitIsDead(unit) and DEAD or UnitIsGhost(unit) and L["Ghost"] or not UnitIsConnected(unit) and L["Offline"]
 
 	if (status) then
 		return status
@@ -146,7 +146,7 @@ end
 
 ElvUF.Tags.Events['health:current-percent'] = 'UNIT_HEALTH_FREQUENT UNIT_MAXHEALTH UNIT_CONNECTION PLAYER_FLAGS_CHANGED'
 ElvUF.Tags.Methods['health:current-percent'] = function(unit)
-	local status = UnitIsDead(unit) and DEAD or UnitIsGhost(unit) and L['Ghost'] or not UnitIsConnected(unit) and L['Offline']
+	local status = UnitIsDead(unit) and DEAD or UnitIsGhost(unit) and L["Ghost"] or not UnitIsConnected(unit) and L["Offline"]
 
 	if (status) then
 		return status
@@ -157,7 +157,7 @@ end
 
 ElvUF.Tags.Events['health:current-max'] = 'UNIT_HEALTH_FREQUENT UNIT_MAXHEALTH UNIT_CONNECTION PLAYER_FLAGS_CHANGED'
 ElvUF.Tags.Methods['health:current-max'] = function(unit)
-	local status = UnitIsDead(unit) and DEAD or UnitIsGhost(unit) and L['Ghost'] or not UnitIsConnected(unit) and L['Offline']
+	local status = UnitIsDead(unit) and DEAD or UnitIsGhost(unit) and L["Ghost"] or not UnitIsConnected(unit) and L["Offline"]
 
 	if (status) then
 		return status
@@ -168,7 +168,7 @@ end
 
 ElvUF.Tags.Events['health:current-max-percent'] = 'UNIT_HEALTH_FREQUENT UNIT_MAXHEALTH UNIT_CONNECTION PLAYER_FLAGS_CHANGED'
 ElvUF.Tags.Methods['health:current-max-percent'] = function(unit)
-	local status = UnitIsDead(unit) and DEAD or UnitIsGhost(unit) and L['Ghost'] or not UnitIsConnected(unit) and L['Offline']
+	local status = UnitIsDead(unit) and DEAD or UnitIsGhost(unit) and L["Ghost"] or not UnitIsConnected(unit) and L["Offline"]
 
 	if (status) then
 		return status
@@ -186,7 +186,7 @@ end
 
 ElvUF.Tags.Events['health:percent'] = 'UNIT_HEALTH_FREQUENT UNIT_MAXHEALTH UNIT_CONNECTION PLAYER_FLAGS_CHANGED'
 ElvUF.Tags.Methods['health:percent'] = function(unit)
-	local status = UnitIsDead(unit) and DEAD or UnitIsGhost(unit) and L['Ghost'] or not UnitIsConnected(unit) and L['Offline']
+	local status = UnitIsDead(unit) and DEAD or UnitIsGhost(unit) and L["Ghost"] or not UnitIsConnected(unit) and L["Offline"]
 
 	if (status) then
 		return status
@@ -731,7 +731,7 @@ ElvUF.Tags.Methods['nearbyplayers:8'] = function(unit)
 	if UnitIsConnected(unit) then
 		for groupUnit, _ in pairs(GroupUnits) do
 			if not UnitIsUnit(unit, groupUnit) and UnitIsConnected(groupUnit) then
-				d = E:GetDistance(unit, groupUnit, true)
+				d = E:GetDistance(unit, groupUnit)
 				if d and d <= 8 then
 					unitsInRange = unitsInRange + 1
 				end
@@ -748,7 +748,7 @@ ElvUF.Tags.Methods['nearbyplayers:10'] = function(unit)
 	if UnitIsConnected(unit) then
 		for groupUnit, _ in pairs(GroupUnits) do
 			if not UnitIsUnit(unit, groupUnit) and UnitIsConnected(groupUnit) then
-				d = E:GetDistance(unit, groupUnit, true)
+				d = E:GetDistance(unit, groupUnit)
 				if d and d <= 10 then
 					unitsInRange = unitsInRange + 1
 				end
@@ -765,7 +765,7 @@ ElvUF.Tags.Methods['nearbyplayers:30'] = function(unit)
 	if UnitIsConnected(unit) then
 		for groupUnit, _ in pairs(GroupUnits) do
 			if not UnitIsUnit(unit, groupUnit) and UnitIsConnected(groupUnit) then
-				d = E:GetDistance(unit, groupUnit, true)
+				d = E:GetDistance(unit, groupUnit)
 				if d and d <= 30 then
 					unitsInRange = unitsInRange + 1
 				end
@@ -780,7 +780,7 @@ ElvUF.Tags.OnUpdateThrottle['distance'] = 0.1
 ElvUF.Tags.Methods['distance'] = function(unit)
 	local d
 	if UnitIsConnected(unit) and not UnitIsUnit(unit, 'player') then
-		d = E:GetDistance('player', unit, true)
+		d = E:GetDistance('player', unit)
 
 		if d then
 			d = format("%.1f", d)

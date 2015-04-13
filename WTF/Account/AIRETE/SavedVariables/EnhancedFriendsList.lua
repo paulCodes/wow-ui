@@ -11,6 +11,6 @@ EnhancedFriendsListOptions = {
 	["GameIconPack"] = "Default",
 	["StatusIconPack"] = "Default",
 	["InfoFontFlag"] = "OUTLINE",
-	["InfoFontSize"] = 12,
 	["Version"] = 2,
+	["InfoFontSize"] = 12,
 }

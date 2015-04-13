@@ -4,7 +4,7 @@ DraenorTreasuresDB = {
 		["Kodescope - Earthen Ring"] = "Default",
 		["Nemitsneaky - Zul'jin"] = "Default",
 		["Lobesofgold - Zul'jin"] = "Default",
-		["Rastaferal - Magtheridon"] = "Default",
+		["Kodethar - Zul'jin"] = "Default",
 		["Kodepyre - Ravencrest"] = "Default",
 		["Kodehardcash - Ravencrest"] = "Default",
 		["Rastabearian - Magtheridon"] = "Default",
@@ -13,7 +13,7 @@ DraenorTreasuresDB = {
 		["Kodescream - Zul'jin"] = "Default",
 		["Kodehirrim - Earthen Ring"] = "Default",
 		["Beohulf - Zul'jin"] = "Default",
-		["Kodethar - Zul'jin"] = "Default",
+		["Rastaferal - Magtheridon"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

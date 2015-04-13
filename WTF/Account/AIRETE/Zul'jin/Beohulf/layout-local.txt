@@ -8,9 +8,9 @@ W: 365
 H: 240
 Frame: DBMMinimapButton
 FrameLevel: 5
-Anchor: RIGHT
+Anchor: TOPRIGHT
 X: -442
-Y: 252
+Y: -244
 W: 32
 H: 32
 Frame: TomTomBlock

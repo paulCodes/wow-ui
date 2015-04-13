@@ -4,6 +4,20 @@ TMW.CHANGELOG_LASTVER="6.2.6"
 
 TMW.CHANGELOG = {
 
+[==[===v7.2.6===]==],
+[==[====Bug Fixes====]==],
+[==[* Implemented a better fix to animations missing required anchors, since the fix in v7.2.5 broke several things.]==],
+[==[]==],
+[==[===v7.2.5===]==],
+[==[* Tweaked some of the default text layouts so that they more closely resemble their pre-WoW-6.1 appearance.]==],
+[==[* Removed the diminishing returns duration setting, as it is now always 18 seconds.]==],
+[==[]==],
+[==[====Bug Fixes====]==],
+[==[* Removed some old code that was needed back when cooldown sweeps weren't inheriting their parent's opacity in the WoD beta. This was breaking cooldown sweeps on icons with Icon Alpha Flash animations where the alpha would go to 0.]==],
+[==[* Icon Events are now setup at the end of icon setup to avoid issues with animations missing required anchors.]==],
+[==[* Fixed a rare issue caused by unused parentheses on condition settings with less than 3 conditions.]==],
+[==[* Fixed IconType_unitconditionunitcondition.lua:96: attempt to index local "Conditions" (a nil value).]==],
+[==[]==],
 [==[===v7.2.4===]==],
 [==[* New icon type: Unit Condition Icon.]==],
 [==[* Added Dialog as a possible sound channel.]==],

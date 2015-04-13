@@ -1,4 +1,4 @@
-local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+﻿local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local B = E:NewModule('Bags', 'AceHook-3.0', 'AceEvent-3.0', 'AceTimer-3.0');
 local Search = LibStub('LibItemSearch-1.2')
 
@@ -170,6 +170,22 @@ function B:SetGuildBankSearch(query)
 	end
 end
 
+function B:UpdateItemLevelDisplay()
+	for _, bagFrame in pairs(self.BagFrames) do
+		for _, bagID in ipairs(bagFrame.BagIDs) do
+			for slotID = 1, GetContainerNumSlots(bagID) do
+				local slot = bagFrame.Bags[bagID][slotID]
+				if slot and slot.itemLevel then
+					slot.itemLevel:FontTemplate(E.LSM:Fetch("font", E.db.bags.itemLevelFont), E.db.bags.itemLevelFontSize, E.db.bags.itemLevelFontOutline)
+				end
+			end
+		end
+		if bagFrame.UpdateAllSlots then
+			bagFrame:UpdateAllSlots()
+		end
+	end
+end
+
 function B:UpdateSlot(bagID, slotID)
 	if (self.Bags[bagID] and self.Bags[bagID].numSlots ~= GetContainerNumSlots(bagID)) or not self.Bags[bagID] or not self.Bags[bagID][slotID] then
 		return;
@@ -195,11 +211,12 @@ function B:UpdateSlot(bagID, slotID)
 		SetItemButtonTextureVertexColor(slot, 1, 1, 1);
 	end
 
+	slot.itemLevel:SetText("")
 	if B.ProfessionColors[bagType] then
 		slot:SetBackdropBorderColor(unpack(B.ProfessionColors[bagType]))
 	elseif (clink) then
-		local iType;
-		slot.name, _, slot.rarity, _, _, iType = GetItemInfo(clink);
+		local iLvl, itemEquipLoc
+		slot.name, _, slot.rarity, iLvl, _, _, _, _, itemEquipLoc = GetItemInfo(clink);
 
 		local isQuestItem, questId, isActiveQuest = GetContainerItemQuestInfo(bagID, slotID);
 		local r, g, b
@@ -207,6 +224,12 @@ function B:UpdateSlot(bagID, slotID)
 		if(slot.rarity) then
 			r, g, b = GetItemQualityColor(slot.rarity);
 			slot.shadow:SetBackdropBorderColor(r, g, b)
+		end
+
+		--Item Level
+		if (iLvl and iLvl >= E.db.bags.itemLevelThreshold) and (itemEquipLoc ~= nil and itemEquipLoc ~= "" and itemEquipLoc ~= "INVTYPE_BAG" and itemEquipLoc ~= "INVTYPE_QUIVER" and itemEquipLoc ~= "INVTYPE_TABARD") and B.db.itemLevel then
+			slot.itemLevel:SetText(iLvl)
+			slot.itemLevel:SetTextColor(r, g, b)
 		end
 
 		-- color slot according to item quality
@@ -314,7 +337,6 @@ end
 function B:REAGENTBANK_PURCHASED()
 	ElvUIReagentBankFrame.cover:Hide()
 end
-
 
 function B:Layout(isBank)
 	if E.private.bags.enable ~= true then return; end
@@ -443,6 +465,10 @@ function B:Layout(isBank)
 					E:RegisterCooldown(f.Bags[bagID][slotID].cooldown)
 					f.Bags[bagID][slotID].bagID = bagID
 					f.Bags[bagID][slotID].slotID = slotID
+
+					f.Bags[bagID][slotID].itemLevel = f.Bags[bagID][slotID]:CreateFontString(nil, 'OVERLAY')
+					f.Bags[bagID][slotID].itemLevel:SetPoint("BOTTOMRIGHT", 0, 2)
+					f.Bags[bagID][slotID].itemLevel:FontTemplate(E.LSM:Fetch("font", E.db.bags.itemLevelFont), E.db.bags.itemLevelFontSize, E.db.bags.itemLevelFontOutline)
 
 					if(f.Bags[bagID][slotID].BattlepayItemTexture) then
 						f.Bags[bagID][slotID].BattlepayItemTexture:Hide()
@@ -579,8 +605,7 @@ function B:UpdateReagentSlot(slotID)
 	if B.ProfessionColors[bagType] then
 		slot:SetBackdropBorderColor(unpack(B.ProfessionColors[bagType]))
 	elseif (clink) then
-		local iType;
-		slot.name, _, slot.rarity, _, _, iType = GetItemInfo(clink);
+		slot.name, _, slot.rarity = GetItemInfo(clink);
 
 		local isQuestItem, questId, isActiveQuest = GetContainerItemQuestInfo(bagID, slotID);
 		local r, g, b
@@ -744,7 +769,7 @@ end
 
 function B:VendorGrays(delete, nomsg, getValue)
 	if (not MerchantFrame or not MerchantFrame:IsShown()) and not delete and not getValue then
-		E:Print(L['You must be at a vendor.'])
+		E:Print(L["You must be at a vendor."])
 		return
 	end
 
@@ -784,7 +809,7 @@ function B:VendorGrays(delete, nomsg, getValue)
 
 	if c>0 and not delete then
 		local g, s, c = floor(c/10000) or 0, floor((c%10000)/100) or 0, c%100
-		E:Print(L['Vendored gray items for:'].." |cffffffff"..g..L.goldabbrev.." |cffffffff"..s..L.silverabbrev.." |cffffffff"..c..L.copperabbrev..".")
+		E:Print(L["Vendored gray items for:"].." |cffffffff"..g..L.goldabbrev.." |cffffffff"..s..L.silverabbrev.." |cffffffff"..c..L.copperabbrev..".")
 	end
 end
 
@@ -792,7 +817,7 @@ function B:VendorGrayCheck()
 	local value = B:GetGraysValue()
 
 	if(value == 0) then
-		E:Print(L['No gray items to delete.'])
+		E:Print(L["No gray items to delete."])
 	elseif(not MerchantFrame or not MerchantFrame:IsShown()) then
 		E.PopupDialogs["DELETE_GRAYS"].Money = value
 		E:StaticPopup_Show('DELETE_GRAYS')
@@ -824,8 +849,8 @@ function B:ContructContainerFrame(name, isBank)
 	f:SetScript("OnEnter", function(self)
 		GameTooltip:SetOwner(self, "ANCHOR_TOPLEFT", 0, 4)
 		GameTooltip:ClearLines()
-		GameTooltip:AddDoubleLine(L['Hold Shift + Drag:'], L['Temporary Move'], 1, 1, 1)
-		GameTooltip:AddDoubleLine(L['Hold Control + Right Click:'], L['Reset Position'], 1, 1, 1)
+		GameTooltip:AddDoubleLine(L["Hold Shift + Drag:"], L["Temporary Move"], 1, 1, 1)
+		GameTooltip:AddDoubleLine(L["Hold Control + Right Click:"], L["Reset Position"], 1, 1, 1)
 
 		GameTooltip:Show()
 	end)
@@ -878,7 +903,7 @@ function B:ContructContainerFrame(name, isBank)
 		f.reagentFrame.cover.purchaseButton.text:FontTemplate()
 		f.reagentFrame.cover.purchaseButton.text:SetPoint('CENTER')
 		f.reagentFrame.cover.purchaseButton.text:SetJustifyH('CENTER')
-		f.reagentFrame.cover.purchaseButton.text:SetText(L['Purchase'])
+		f.reagentFrame.cover.purchaseButton.text:SetText(L["Purchase"])
 		f.reagentFrame.cover.purchaseButton:SetScript("OnEnter", self.Tooltip_Show)
 		f.reagentFrame.cover.purchaseButton:SetScript("OnLeave", self.Tooltip_Hide)
 		f.reagentFrame.cover.purchaseButton:SetScript("OnClick", function()
@@ -909,7 +934,7 @@ function B:ContructContainerFrame(name, isBank)
 		f.reagentToggle:GetPushedTexture():SetTexCoord(unpack(E.TexCoords))
 		f.reagentToggle:GetPushedTexture():SetInside()
 		f.reagentToggle:StyleButton(nil, true)
-		f.reagentToggle.ttText = L['Show/Hide Reagents'];
+		f.reagentToggle.ttText = L["Show/Hide Reagents"];
 		f.reagentToggle:SetScript("OnEnter", self.Tooltip_Show)
 		f.reagentToggle:SetScript("OnLeave", self.Tooltip_Hide)
 		f.reagentToggle:SetScript("OnClick", function()
@@ -966,7 +991,7 @@ function B:ContructContainerFrame(name, isBank)
 		f.depositButton:GetPushedTexture():SetTexCoord(unpack(E.TexCoords))
 		f.depositButton:GetPushedTexture():SetInside()
 		f.depositButton:StyleButton(nil, true)
-		f.depositButton.ttText = L['Deposit Reagents']
+		f.depositButton.ttText = L["Deposit Reagents"]
 		f.depositButton:SetScript("OnEnter", self.Tooltip_Show)
 		f.depositButton:SetScript("OnLeave", self.Tooltip_Hide)
 		f.depositButton:SetScript('OnClick', function()
@@ -987,7 +1012,7 @@ function B:ContructContainerFrame(name, isBank)
 		f.bagsButton:GetPushedTexture():SetTexCoord(unpack(E.TexCoords))
 		f.bagsButton:GetPushedTexture():SetInside()
 		f.bagsButton:StyleButton(nil, true)
-		f.bagsButton.ttText = L['Toggle Bags']
+		f.bagsButton.ttText = L["Toggle Bags"]
 		f.bagsButton:SetScript("OnEnter", self.Tooltip_Show)
 		f.bagsButton:SetScript("OnLeave", self.Tooltip_Hide)
 		f.bagsButton:SetScript('OnClick', function()
@@ -1011,7 +1036,7 @@ function B:ContructContainerFrame(name, isBank)
 		f.purchaseBagButton:GetPushedTexture():SetTexCoord(unpack(E.TexCoords))
 		f.purchaseBagButton:GetPushedTexture():SetInside()
 		f.purchaseBagButton:StyleButton(nil, true)
-		f.purchaseBagButton.ttText = L['Purchase Bags']
+		f.purchaseBagButton.ttText = L["Purchase Bags"]
 		f.purchaseBagButton:SetScript("OnEnter", self.Tooltip_Show)
 		f.purchaseBagButton:SetScript("OnLeave", self.Tooltip_Hide)
 		f.purchaseBagButton:SetScript("OnClick", function()
@@ -1085,7 +1110,7 @@ function B:ContructContainerFrame(name, isBank)
 		f.bagsButton:GetPushedTexture():SetTexCoord(unpack(E.TexCoords))
 		f.bagsButton:GetPushedTexture():SetInside()
 		f.bagsButton:StyleButton(nil, true)
-		f.bagsButton.ttText = L['Toggle Bags']
+		f.bagsButton.ttText = L["Toggle Bags"]
 		f.bagsButton:SetScript("OnEnter", self.Tooltip_Show)
 		f.bagsButton:SetScript("OnLeave", self.Tooltip_Hide)
 		f.bagsButton:SetScript('OnClick', function() ToggleFrame(f.ContainerHolder) end)
@@ -1102,7 +1127,7 @@ function B:ContructContainerFrame(name, isBank)
 		f.vendorGraysButton:GetPushedTexture():SetTexCoord(unpack(E.TexCoords))
 		f.vendorGraysButton:GetPushedTexture():SetInside()
 		f.vendorGraysButton:StyleButton(nil, true)
-		f.vendorGraysButton.ttText = L['Vendor Grays']
+		f.vendorGraysButton.ttText = L["Vendor Grays"]
 		f.vendorGraysButton:SetScript("OnEnter", self.Tooltip_Show)
 		f.vendorGraysButton:SetScript("OnLeave", self.Tooltip_Hide)
 		f.vendorGraysButton:SetScript("OnClick", B.VendorGrayCheck)
@@ -1138,7 +1163,7 @@ function B:ContructContainerFrame(name, isBank)
 		f.currencyButton:Point('TOPRIGHT', f.holderFrame, 'BOTTOMRIGHT', 0, 18);
 		f.currencyButton:Height(22);
 		for i = 1, MAX_WATCHED_TOKENS do
-			f.currencyButton[i] = CreateFrame('Button', nil, f.currencyButton);
+			f.currencyButton[i] = CreateFrame('Button', f:GetName().."CurrencyButton"..i, f.currencyButton);
 			f.currencyButton[i]:Size(16);
 			f.currencyButton[i]:SetTemplate('Default');
 			f.currencyButton[i]:SetID(i);
@@ -1155,7 +1180,18 @@ function B:ContructContainerFrame(name, isBank)
 			f.currencyButton[i]:Hide();
 		end
 
-		f:SetScript('OnHide', CloseBackpack)
+		f:SetScript('OnHide', function()
+			CloseBackpack()
+			for i = 1, NUM_BAG_FRAMES do
+				CloseBag(i)
+			end
+
+			if ElvUIBags and ElvUIBags.buttons then
+				for _, bagButton in pairs(ElvUIBags.buttons) do
+					bagButton:SetChecked(false)
+				end
+			end
+		end)
 	end
 
 	tinsert(UISpecialFrames, f:GetName()) --Keep an eye on this for taints..
@@ -1257,7 +1293,7 @@ function B:GUILDBANKFRAME_OPENED()
 	button:SetTemplate("Default", true)
 	button:Size(110, 20)
 	button:Point("RIGHT", GuildItemSearchBox, "LEFT", -4, 0)
-	button:SetText(L['Sort Tab'])
+	button:SetText(L["Sort Tab"])
 	button:SetScript("OnClick", function() B:CommandDecorator(B.SortBags, 'guild')() end)
 	E.Skins:HandleButton(button, true)]]
 	if GuildItemSearchBox then

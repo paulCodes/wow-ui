@@ -1,41 +1,41 @@
 
 MogItDB = {
-	["global"] = {
-		["version"] = "3.4.0",
-	},
 	["profileKeys"] = {
-		["Poobear - Azshara"] = "Default",
 		["Equalswise - Demon Soul"] = "Default",
-		["Roguejutsu - Gorefiend"] = "Default",
-		["Dentisthulk - Azgalor"] = "Default",
-		["Kodaver - Zul'jin"] = "Default",
+		["Kodejutsu - Ravencrest"] = "Default",
+		["Kodejutsu - Earthen Ring"] = "Default",
+		["Kodescope - Earthen Ring"] = "Default",
+		["Poobear - Azshara"] = "Default",
 		["Hulfkwando - Zul'jin"] = "Default",
 		["Programmadin - Azgalor"] = "Default",
 		["Locklobster - Demon Soul"] = "Default",
 		["Kodehardcash - Ravencrest"] = "Default",
 		["Kodesmash - Earthen Ring"] = "Default",
 		["Skjöldrhulf - Zul'jin"] = "Default",
-		["Nemitsneaky - Zul'jin"] = "Default",
+		["Kodejukenbo - Azgalor"] = "Default",
 		["Kodefoo - Zul'jin"] = "Default",
 		["Kodehirrim - Earthen Ring"] = "Default",
 		["Beohulf - Zul'jin"] = "Default",
 		["Rastaferal - Magtheridon"] = "Default",
-		["Lobesofgold - Zul'jin"] = "Default",
-		["Taeluh - Earthen Ring"] = "Default",
-		["Thorisdottir - Zul'jin"] = "Default",
-		["Kodescope - Earthen Ring"] = "Default",
-		["Kodejukenbo - Azgalor"] = "Default",
 		["Kodescream - Zul'jin"] = "Default",
-		["Wrothblargh - Zul'jin"] = "Default",
-		["Kodepyre - Ravencrest"] = "Default",
-		["Rastabearian - Magtheridon"] = "Default",
+		["Taeluh - Earthen Ring"] = "Default",
 		["Kodefoo - Demon Soul"] = "Default",
+		["Dentisthulk - Azgalor"] = "Default",
+		["Nemitsneaky - Zul'jin"] = "Default",
+		["Lobesofgold - Zul'jin"] = "Default",
+		["Rastabearian - Magtheridon"] = "Default",
+		["Kodepyre - Ravencrest"] = "Default",
+		["Wrothblargh - Zul'jin"] = "Default",
+		["Thorisdottir - Zul'jin"] = "Default",
 		["Skoldrhulf - Zul'jin"] = "Default",
 		["Kodewild - Ravencrest"] = "Default",
 		["Codetrek - Zul'jin"] = "Default",
-		["Kodejutsu - Earthen Ring"] = "Default",
-		["Kodejutsu - Ravencrest"] = "Default",
+		["Roguejutsu - Gorefiend"] = "Default",
+		["Kodaver - Zul'jin"] = "Default",
 		["Kodethar - Zul'jin"] = "Default",
+	},
+	["global"] = {
+		["version"] = "3.5.0",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -54,68 +54,68 @@ MogItDB = {
 				}, -- [1]
 				{
 					["y"] = 140.999908447266,
-					["h"] = 384.999938964844,
-					["w"] = 334.999969482422,
 					["x"] = -374.000549316406,
+					["w"] = 334.999969482422,
+					["h"] = 384.999938964844,
 				}, -- [2]
 				{
 					["y"] = 0,
-					["h"] = 384.999938964844,
 					["x"] = 0,
+					["h"] = 384.999938964844,
 				}, -- [3]
 			},
-			["gridWidth"] = 1085.00048828125,
+			["gridHeight"] = 781.999816894531,
 			["y"] = 19.9999866485596,
 			["x"] = 13.0001602172852,
-			["gridHeight"] = 781.999816894531,
+			["gridWidth"] = 1085.00061035156,
 		},
 	},
 }
 MogItWishlist = {
 	["profileKeys"] = {
-		["Poobear - Azshara"] = "Poobear - Azshara",
 		["Equalswise - Demon Soul"] = "Equalswise - Demon Soul",
-		["Roguejutsu - Gorefiend"] = "Roguejutsu - Gorefiend",
-		["Dentisthulk - Azgalor"] = "Dentisthulk - Azgalor",
-		["Kodaver - Zul'jin"] = "Kodaver - Zul'jin",
+		["Kodejutsu - Ravencrest"] = "Kodejutsu - Ravencrest",
+		["Kodejutsu - Earthen Ring"] = "Kodejutsu - Earthen Ring",
+		["Kodescope - Earthen Ring"] = "Kodescope - Earthen Ring",
+		["Poobear - Azshara"] = "Poobear - Azshara",
 		["Hulfkwando - Zul'jin"] = "Hulfkwando - Zul'jin",
 		["Programmadin - Azgalor"] = "Programmadin - Azgalor",
 		["Locklobster - Demon Soul"] = "Locklobster - Demon Soul",
 		["Kodehardcash - Ravencrest"] = "Kodehardcash - Ravencrest",
 		["Kodesmash - Earthen Ring"] = "Kodesmash - Earthen Ring",
 		["Skjöldrhulf - Zul'jin"] = "Skjöldrhulf - Zul'jin",
-		["Nemitsneaky - Zul'jin"] = "Nemitsneaky - Zul'jin",
+		["Kodejukenbo - Azgalor"] = "Kodejukenbo - Azgalor",
 		["Kodefoo - Zul'jin"] = "Kodefoo - Zul'jin",
 		["Kodehirrim - Earthen Ring"] = "Kodehirrim - Earthen Ring",
 		["Beohulf - Zul'jin"] = "Beohulf - Zul'jin",
 		["Rastaferal - Magtheridon"] = "Rastaferal - Magtheridon",
-		["Lobesofgold - Zul'jin"] = "Lobesofgold - Zul'jin",
-		["Taeluh - Earthen Ring"] = "Taeluh - Earthen Ring",
-		["Thorisdottir - Zul'jin"] = "Thorisdottir - Zul'jin",
-		["Kodescope - Earthen Ring"] = "Kodescope - Earthen Ring",
-		["Kodejukenbo - Azgalor"] = "Kodejukenbo - Azgalor",
 		["Kodescream - Zul'jin"] = "Kodescream - Zul'jin",
-		["Wrothblargh - Zul'jin"] = "Wrothblargh - Zul'jin",
-		["Kodepyre - Ravencrest"] = "Kodepyre - Ravencrest",
-		["Rastabearian - Magtheridon"] = "Rastabearian - Magtheridon",
+		["Taeluh - Earthen Ring"] = "Taeluh - Earthen Ring",
 		["Kodefoo - Demon Soul"] = "Kodefoo - Demon Soul",
+		["Dentisthulk - Azgalor"] = "Dentisthulk - Azgalor",
+		["Nemitsneaky - Zul'jin"] = "Nemitsneaky - Zul'jin",
+		["Lobesofgold - Zul'jin"] = "Lobesofgold - Zul'jin",
+		["Rastabearian - Magtheridon"] = "Rastabearian - Magtheridon",
+		["Kodepyre - Ravencrest"] = "Kodepyre - Ravencrest",
+		["Wrothblargh - Zul'jin"] = "Wrothblargh - Zul'jin",
+		["Thorisdottir - Zul'jin"] = "Thorisdottir - Zul'jin",
 		["Skoldrhulf - Zul'jin"] = "Skoldrhulf - Zul'jin",
 		["Kodewild - Ravencrest"] = "Kodewild - Ravencrest",
 		["Codetrek - Zul'jin"] = "Codetrek - Zul'jin",
-		["Kodejutsu - Earthen Ring"] = "Kodejutsu - Earthen Ring",
-		["Kodejutsu - Ravencrest"] = "Kodejutsu - Ravencrest",
+		["Roguejutsu - Gorefiend"] = "Roguejutsu - Gorefiend",
+		["Kodaver - Zul'jin"] = "Kodaver - Zul'jin",
 		["Kodethar - Zul'jin"] = "Kodethar - Zul'jin",
 	},
 	["profiles"] = {
-		["Poobear - Azshara"] = {
-		},
 		["Equalswise - Demon Soul"] = {
 		},
-		["Roguejutsu - Gorefiend"] = {
+		["Kodejutsu - Ravencrest"] = {
 		},
-		["Dentisthulk - Azgalor"] = {
+		["Kodejutsu - Earthen Ring"] = {
 		},
-		["Kodaver - Zul'jin"] = {
+		["Kodescope - Earthen Ring"] = {
+		},
+		["Poobear - Azshara"] = {
 		},
 		["Hulfkwando - Zul'jin"] = {
 		},
@@ -129,7 +129,7 @@ MogItWishlist = {
 		},
 		["Skjöldrhulf - Zul'jin"] = {
 		},
-		["Nemitsneaky - Zul'jin"] = {
+		["Kodejukenbo - Azgalor"] = {
 		},
 		["Kodefoo - Zul'jin"] = {
 		},
@@ -150,13 +150,13 @@ MogItWishlist = {
 				{
 					["items"] = {
 						["ChestSlot"] = "item:41189:0",
-						["LegsSlot"] = "item:37743:0",
+						["FeetSlot"] = "item:43402:0",
 						["WristSlot"] = "item:41355:0",
-						["HandsSlot"] = "item:42765:0",
+						["HeadSlot"] = "item:41344:0",
 						["ShoulderSlot"] = "item:37783:0",
 						["WaistSlot"] = "item:37785:0",
-						["HeadSlot"] = "item:41344:0",
-						["FeetSlot"] = "item:43402:0",
+						["HandsSlot"] = "item:42765:0",
+						["LegsSlot"] = "item:37743:0",
 					},
 					["name"] = "viking",
 					["alternateItems"] = {
@@ -176,8 +176,8 @@ MogItWishlist = {
 						["FeetSlot"] = "item:94267:0",
 						["HeadSlot"] = "item:40328:0",
 						["LegsSlot"] = "item:85988:0",
-						["ShoulderSlot"] = "item:86149:0",
 						["HandsSlot"] = "item:39228:0",
+						["ShoulderSlot"] = "item:86149:0",
 					},
 					["name"] = "maroon",
 					["alternateItems"] = {
@@ -199,10 +199,10 @@ MogItWishlist = {
 						["MainHandSlot"] = "item:11684:0",
 						["SecondaryHandSlot"] = "item:103847:0",
 						["FeetSlot"] = "item:16859:0",
-						["WaistSlot"] = "item:16858:0",
-						["LegsSlot"] = "item:16855:0",
-						["HandsSlot"] = "item:16860:0",
 						["ShoulderSlot"] = "item:60417:0",
+						["WaistSlot"] = "item:16858:0",
+						["HandsSlot"] = "item:16860:0",
+						["LegsSlot"] = "item:16855:0",
 					},
 					["name"] = "Maraad",
 					["alternateItems"] = {
@@ -213,8 +213,8 @@ MogItWishlist = {
 						["ChestSlot"] = "item:29062:0",
 						["HeadSlot"] = "item:29061:0",
 						["LegsSlot"] = "item:29063:0",
-						["HandsSlot"] = "item:29065:0",
 						["ShoulderSlot"] = "item:29064:0",
+						["HandsSlot"] = "item:29065:0",
 					},
 					["name"] = "Justicar Raiment",
 					["alternateItems"] = {
@@ -224,25 +224,25 @@ MogItWishlist = {
 		},
 		["Rastaferal - Magtheridon"] = {
 		},
-		["Lobesofgold - Zul'jin"] = {
+		["Kodescream - Zul'jin"] = {
 		},
 		["Taeluh - Earthen Ring"] = {
 		},
-		["Thorisdottir - Zul'jin"] = {
+		["Kodefoo - Demon Soul"] = {
 		},
-		["Kodescope - Earthen Ring"] = {
+		["Dentisthulk - Azgalor"] = {
 		},
-		["Kodejukenbo - Azgalor"] = {
+		["Nemitsneaky - Zul'jin"] = {
 		},
-		["Kodescream - Zul'jin"] = {
-		},
-		["Wrothblargh - Zul'jin"] = {
-		},
-		["Kodepyre - Ravencrest"] = {
+		["Lobesofgold - Zul'jin"] = {
 		},
 		["Rastabearian - Magtheridon"] = {
 		},
-		["Kodefoo - Demon Soul"] = {
+		["Kodepyre - Ravencrest"] = {
+		},
+		["Wrothblargh - Zul'jin"] = {
+		},
+		["Thorisdottir - Zul'jin"] = {
 		},
 		["Skoldrhulf - Zul'jin"] = {
 		},
@@ -250,9 +250,9 @@ MogItWishlist = {
 		},
 		["Codetrek - Zul'jin"] = {
 		},
-		["Kodejutsu - Earthen Ring"] = {
+		["Roguejutsu - Gorefiend"] = {
 		},
-		["Kodejutsu - Ravencrest"] = {
+		["Kodaver - Zul'jin"] = {
 		},
 		["Kodethar - Zul'jin"] = {
 		},

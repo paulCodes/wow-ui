@@ -5,7 +5,7 @@ TomTomDB = {
 		["Kodescope - Earthen Ring"] = "Default",
 		["Nemitsneaky - Zul'jin"] = "Default",
 		["Lobesofgold - Zul'jin"] = "Default",
-		["Rastaferal - Magtheridon"] = "Default",
+		["Kodethar - Zul'jin"] = "Default",
 		["Kodepyre - Ravencrest"] = "Default",
 		["Kodehardcash - Ravencrest"] = "Default",
 		["Rastabearian - Magtheridon"] = "Default",
@@ -14,7 +14,7 @@ TomTomDB = {
 		["Kodescream - Zul'jin"] = "Default",
 		["Kodehirrim - Earthen Ring"] = "Default",
 		["Beohulf - Zul'jin"] = "Default",
-		["Kodethar - Zul'jin"] = "Default",
+		["Rastaferal - Magtheridon"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -28,7 +28,7 @@ TomTomWaypointsMF = {
 		["Kodescope - Earthen Ring"] = "Kodescope - Earthen Ring",
 		["Nemitsneaky - Zul'jin"] = "Nemitsneaky - Zul'jin",
 		["Lobesofgold - Zul'jin"] = "Lobesofgold - Zul'jin",
-		["Rastaferal - Magtheridon"] = "Rastaferal - Magtheridon",
+		["Kodethar - Zul'jin"] = "Kodethar - Zul'jin",
 		["Kodepyre - Ravencrest"] = "Kodepyre - Ravencrest",
 		["Kodehardcash - Ravencrest"] = "Kodehardcash - Ravencrest",
 		["Rastabearian - Magtheridon"] = "Rastabearian - Magtheridon",
@@ -37,7 +37,7 @@ TomTomWaypointsMF = {
 		["Kodescream - Zul'jin"] = "Kodescream - Zul'jin",
 		["Kodehirrim - Earthen Ring"] = "Kodehirrim - Earthen Ring",
 		["Beohulf - Zul'jin"] = "Beohulf - Zul'jin",
-		["Kodethar - Zul'jin"] = "Kodethar - Zul'jin",
+		["Rastaferal - Magtheridon"] = "Rastaferal - Magtheridon",
 	},
 	["profiles"] = {
 		["Taeluh - Earthen Ring"] = {
@@ -48,7 +48,7 @@ TomTomWaypointsMF = {
 		},
 		["Lobesofgold - Zul'jin"] = {
 		},
-		["Rastaferal - Magtheridon"] = {
+		["Kodethar - Zul'jin"] = {
 		},
 		["Kodepyre - Ravencrest"] = {
 		},
@@ -66,7 +66,7 @@ TomTomWaypointsMF = {
 		},
 		["Beohulf - Zul'jin"] = {
 		},
-		["Kodethar - Zul'jin"] = {
+		["Rastaferal - Magtheridon"] = {
 		},
 	},
 }

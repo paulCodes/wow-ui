@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(325, "DBM-DragonSoul", nil, 187)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 145 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 151 $"):sub(12, -3))
 mod:SetCreatureID(55312)
 mod:SetEncounterID(1295)
 --mod:DisableRegenDetection()--Uncomment in next dbm release
@@ -127,7 +127,9 @@ function mod:SPELL_AURA_APPLIED(args)
 		local amount = args.amount or 1
 		warnVoidBolt:Show(args.destName, amount)
 		local _, _, _, _, _, duration, expires = UnitDebuff(args.destName, args.spellName)--This is now consistently 12 seconds, but it's been nerfed twice without warning, i'm just gonna leave this here to make the mod continue to auto correct it when/if it changes more.
-		timerVoidBolt:Start(duration, args.destName)
+		if duration then
+			timerVoidBolt:Start(duration, args.destName)
+		end
 		if amount >= 2 then
 			if args:IsPlayer() then
 				specWarnVoidBolt:Show(amount)

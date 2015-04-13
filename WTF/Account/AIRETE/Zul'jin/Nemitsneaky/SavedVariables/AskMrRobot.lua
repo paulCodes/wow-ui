@@ -29,7 +29,7 @@ AmrDb = {
 			"|cff1eff00|Hitem:20821:0:0:0:0:0:0:1246019200:28:0:0:0|h[Inlaid Malachite Ring]|h|r", -- [11]
 			"|cff1eff00|Hitem:20907:0:0:0:0:0:0:414646656:28:0:0:0|h[Solid Bronze Ring]|h|r", -- [12]
 			"|cffe6cc80|Hitem:122530:0:0:0:0:0:0:0:28:0:0:1:582|h[Inherited Mark of Tyranny]|h|r", -- [13]
-			"|cffe6cc80|Hitem:122370:0:0:0:0:0:0:0:28:0:0:1:582|h[Inherited Insignia of the Horde]|h|r", -- [14]
+			"|cffe6cc80|Hitem:122370:0:0:0:0:0:0:0:28:0:0:1:583|h[Inherited Insignia of the Horde]|h|r", -- [14]
 			"|cffe6cc80|Hitem:122261:0:0:0:0:0:0:0:28:0:0:1:582|h[Inherited Cape of the Black Baron]|h|r", -- [15]
 			"|cffe6cc80|Hitem:122364:4444:0:0:0:0:0:0:28:0:0:1:582|h[Sharpened Scarlet Kris]|h|r", -- [16]
 			"|cffe6cc80|Hitem:122364:4444:0:0:0:0:0:0:28:0:0:1:582|h[Sharpened Scarlet Kris]|h|r", -- [17]
@@ -42,7 +42,8 @@ AmrDb = {
 	["Region"] = "US",
 	["Currencies"] = {
 	},
-	["Class"] = "ROGUE",
+	["Glyphs"] = {
+	},
 	["LogData"] = {
 		["_wipes"] = {
 		},
@@ -50,12 +51,13 @@ AmrDb = {
 			[1228] = "disabled",
 			[1205] = "disabled",
 		},
-		["_lastZone"] = "Eastern Kingdoms",
 		["_lastDiff"] = 0,
+		["_lastZone"] = "Eastern Kingdoms",
 	},
 	["BagItems"] = {
 	},
-	["RealmName"] = "Zul'jin",
+	["BankItems"] = {
+	},
 	["LastCharacterImport"] = "",
 	["Reps"] = {
 	},
@@ -64,8 +66,6 @@ AmrDb = {
 	},
 	["Professions"] = {
 	},
-	["BankItems"] = {
-	},
-	["Glyphs"] = {
-	},
+	["RealmName"] = "Zul'jin",
+	["Class"] = "ROGUE",
 }

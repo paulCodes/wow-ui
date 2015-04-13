@@ -1,5 +1,25 @@
 
 TradeSkillMaster_MailingDB = {
+	["global"] = {
+		["optionsTreeStatus"] = {
+			["groups"] = {
+				["1"] = true,
+				["2mail to kodehirrim"] = true,
+				["2"] = true,
+				[2] = true,
+				["2mail to kodescope"] = true,
+				["2mail to lobesofgold"] = true,
+				["2kodethar"] = true,
+				["2mail to bank"] = true,
+				["2mail enchants to kodescope"] = true,
+			},
+			["scrollvalue"] = 0,
+			["fullwidth"] = 968.000122070313,
+			["selected"] = 1,
+			["treewidth"] = 175,
+			["treesizable"] = true,
+		},
+	},
 	["profileKeys"] = {
 		["Kodaver - Zul'jin"] = "Default",
 		["Programmadin - Azgalor"] = "Default",
@@ -30,34 +50,14 @@ TradeSkillMaster_MailingDB = {
 		["Nemitsneaky - Zul'jin"] = "Default",
 		["Lobesofgold - Zul'jin"] = "Default",
 		["Equalswise - Demon Soul"] = "Default",
-		["Kodefoo - Demon Soul"] = "Default",
-		["Rastabearian - Magtheridon"] = "Default",
-		["Kodescope - Earthen Ring"] = "Default",
-		["Kodejutsu - Earthen Ring"] = "Default",
-		["Thorisdottir - Zul'jin"] = "Default",
-		["Grimwroth - Gorefiend"] = "Default",
 		["Wrothblargh - Zul'jin"] = "Default",
+		["Rastabearian - Magtheridon"] = "Default",
+		["Grimwroth - Gorefiend"] = "Default",
+		["Thorisdottir - Zul'jin"] = "Default",
+		["Kodejutsu - Earthen Ring"] = "Default",
+		["Kodescope - Earthen Ring"] = "Default",
+		["Kodefoo - Demon Soul"] = "Default",
 		["Kodethar - Zul'jin"] = "Default",
-	},
-	["global"] = {
-		["optionsTreeStatus"] = {
-			["groups"] = {
-				["1"] = true,
-				["2mail to kodehirrim"] = true,
-				["2"] = true,
-				[2] = true,
-				["2mail to kodescope"] = true,
-				["2mail to lobesofgold"] = true,
-				["2kodethar"] = true,
-				["2mail to bank"] = true,
-				["2mail enchants to kodescope"] = true,
-			},
-			["scrollvalue"] = 0,
-			["selected"] = 1,
-			["treesizable"] = true,
-			["treewidth"] = 175,
-			["fullwidth"] = 968.000122070313,
-		},
 	},
 	["profiles"] = {
 		["Default"] = {

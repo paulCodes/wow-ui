@@ -35,11 +35,11 @@ SkadaDB = {
 		["Lobesofgold - Zul'jin"] = "Default",
 		["Equalswise - Demon Soul"] = "Default",
 		["Thorisdottir - Zul'jin"] = "Default",
-		["Kodescope - Earthen Ring"] = "Default",
-		["Roguejutsu - Gorefiend"] = "Default",
-		["Kodefoo - Demon Soul"] = "Default",
-		["Wrothblargh - Zul'jin"] = "Default",
 		["Rastabearian - Magtheridon"] = "Default",
+		["Wrothblargh - Zul'jin"] = "Default",
+		["Kodefoo - Demon Soul"] = "Default",
+		["Roguejutsu - Gorefiend"] = "Default",
+		["Kodescope - Earthen Ring"] = "Default",
 		["Kodethar - Zul'jin"] = "Default",
 	},
 	["profiles"] = {
@@ -51,20 +51,20 @@ SkadaDB = {
 			},
 			["windows"] = {
 				{
-					["y"] = 187.999633789063,
-					["barfont"] = "2002",
-					["point"] = "BOTTOMLEFT",
-					["mode"] = "Damage",
-					["barwidth"] = 409.002166748047,
-					["barfontsize"] = 15,
 					["background"] = {
+						["height"] = 93.0002212524414,
 						["color"] = {
 							["a"] = 0.730000019073486,
 							["b"] = 0,
 						},
-						["height"] = 93.0002212524414,
 					},
+					["y"] = 187.999649047852,
 					["x"] = 6.00014591217041,
+					["point"] = "BOTTOMLEFT",
+					["mode"] = "Damage",
+					["barwidth"] = 409.002166748047,
+					["barfontsize"] = 15,
+					["barfont"] = "2002",
 				}, -- [1]
 			},
 			["report"] = {

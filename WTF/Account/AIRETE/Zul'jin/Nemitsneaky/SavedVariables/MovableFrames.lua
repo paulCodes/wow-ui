@@ -156,7 +156,7 @@ MovableFramesSaved = {
 	["GMChatStatusFrame"] = {
 		["Permanent"] = false,
 	},
-	["TutorialFrame"] = {
+	["KeyBindingFrame"] = {
 		["Permanent"] = false,
 	},
 	["TransmogrifyFrame"] = {
@@ -165,16 +165,16 @@ MovableFramesSaved = {
 	["CalendarCreateEventFrame"] = {
 		["Permanent"] = false,
 	},
-	["TradeSkillFrame"] = {
+	["FriendsFrame"] = {
 		["Permanent"] = false,
 	},
 	["InspectFrame"] = {
 		["Permanent"] = false,
 	},
-	["TaxiFrame"] = {
+	["CalendarFrame"] = {
 		["Permanent"] = false,
 	},
-	["TabardFrame"] = {
+	["AudioOptionsFrame"] = {
 		["Permanent"] = false,
 	},
 	["BankFrame"] = {
@@ -183,10 +183,10 @@ MovableFramesSaved = {
 	["RaidBrowserFrame"] = {
 		["Permanent"] = false,
 	},
-	["SpellBookFrame"] = {
+	["ScrollOfResurrectionSelectionFrame"] = {
 		["Permanent"] = false,
 	},
-	["GuildControlUI"] = {
+	["LookingForGuildFrame"] = {
 		["Permanent"] = false,
 	},
 	["ReportPlayerNameDialog"] = {
@@ -198,58 +198,58 @@ MovableFramesSaved = {
 	["OpenMailFrame"] = {
 		["Permanent"] = false,
 	},
-	["ReadyCheckFrame"] = {
-		["Permanent"] = false,
-	},
-	["QuestChoiceFrame"] = {
-		["Permanent"] = false,
-	},
-	["LossOfControlFrame"] = {
-		["Permanent"] = false,
-	},
-	["MacOptionsFrame"] = {
-		["Permanent"] = false,
-	},
-	["MerchantFrame"] = {
-		["Permanent"] = false,
-	},
-	["BonusRollFrame"] = {
-		["Permanent"] = false,
-	},
-	["CharacterFrame"] = {
-		["Permanent"] = false,
-	},
-	["CalendarViewEventFrame"] = {
+	["PVEFrame"] = {
 		["Permanent"] = false,
 	},
 	["ArchaeologyFrame"] = {
 		["Permanent"] = false,
 	},
-	["PVEFrame"] = {
+	["LossOfControlFrame"] = {
+		["Permanent"] = false,
+	},
+	["CalendarViewEventFrame"] = {
+		["Permanent"] = false,
+	},
+	["MerchantFrame"] = {
+		["Permanent"] = false,
+	},
+	["CharacterFrame"] = {
+		["Permanent"] = false,
+	},
+	["BonusRollFrame"] = {
+		["Permanent"] = false,
+	},
+	["MacOptionsFrame"] = {
+		["Permanent"] = false,
+	},
+	["QuestChoiceFrame"] = {
+		["Permanent"] = false,
+	},
+	["ReadyCheckFrame"] = {
 		["Permanent"] = false,
 	},
 	["LootFrame"] = {
 		["Permanent"] = false,
 	},
-	["LookingForGuildFrame"] = {
+	["GuildControlUI"] = {
 		["Permanent"] = false,
 	},
-	["ScrollOfResurrectionSelectionFrame"] = {
+	["SpellBookFrame"] = {
 		["Permanent"] = false,
 	},
-	["AudioOptionsFrame"] = {
+	["TabardFrame"] = {
 		["Permanent"] = false,
 	},
-	["CalendarFrame"] = {
+	["TaxiFrame"] = {
 		["Permanent"] = false,
 	},
-	["FriendsFrame"] = {
+	["TradeSkillFrame"] = {
 		["Permanent"] = false,
 	},
 	["EncounterJournal"] = {
 		["Permanent"] = false,
 	},
-	["KeyBindingFrame"] = {
+	["TutorialFrame"] = {
 		["Permanent"] = false,
 	},
 	["HelpFrame"] = {

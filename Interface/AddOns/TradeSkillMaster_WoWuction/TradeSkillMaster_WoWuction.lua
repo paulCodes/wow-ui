@@ -13,6 +13,14 @@ local AceGUI = LibStub("AceGUI-3.0") -- load the AceGUI libraries
 local L = LibStub("AceLocale-3.0"):GetLocale("TradeSkillMaster_WoWuction") -- loads the localization table
 local private = {}
 
+
+StaticPopupDialogs["TSM_WOWUCTION_NO_DATA_POPUP"] = {
+	text = "|cffff0000WARNING:|r TSM_WoWuction doesn't currently have any pricing data. Either download the TSM Desktop Application from |cff99ffffhttp://tradeskillmaster.com|r to automatically update TSM_WoWuction's data, or download data from |cff99ffffhttp://wowuction.com|r directly.",
+	button1 = OKAY,
+	timeout = 0,
+	hideOnEscape = false,
+}
+
 local savedDBDefaults = {
 	profile = {
 		tooltip = true,
@@ -55,46 +63,55 @@ function TSM:RegisterModule()
 end
 
 function TSM:OnEnable()
-	local realms = { GetRealmName(), "region" }
 	local CURRENT_REALM = strlower(GetRealmName())
 	local extractedData = {}
 	local hasData = false
 	
-	if TSM.AppData then
-		local temp = {}
-		for key, data in pairs(TSM.AppData) do
-			if key ~= "lastUpdate" then
-				temp[strlower(key)] = data
-			else
-				temp[key] = data
+	
+	local realmAppData, regionAppData
+	local appData = TSMAPI.AppHelper and TSMAPI.AppHelper:FetchData("WOWUCTION_MARKET_DATA") -- get app data from TSM_AppHelper if it's installed
+	if appData then
+		for _, info in ipairs(appData) do
+			local realm, data = unpack(info)
+			if realm == "Global" then
+				regionAppData = assert(loadstring(data))()
+			elseif TSMAPI.AppHelper:IsCurrentRealm(realm) then
+				realmAppData = assert(loadstring(data))()
 			end
-			TSM.AppData = temp
 		end
 	end
-
-	if TSM.AppData and (TSM.AppData.alliance or TSM.AppData[CURRENT_REALM]) then
+	
+	if realmAppData or regionAppData then
+		extractedData.lastUpdate = (realmAppData and realmAppData.downloadTime) or (regionAppData and regionAppData.downloadTime)
 		hasData = true
-		for _, set in ipairs({"alliance", CURRENT_REALM}) do
-			if TSM.AppData[set] then
-				local fields = TSM.AppData[set].fields
-				for _, itemData in ipairs(TSM.AppData[set].data) do
-					local itemID = itemData[1]
-					extractedData[itemID] = extractedData[itemID] or {}
-					for i=2, #itemData do
-						local key = fields[i]
-						if key == "regionAvgDailyQuantityX100" then
-							key = "regionAvgDailyQuantity"
-							itemData[i] = itemData[i] / 100
-						elseif key == "dailySoldX100" then
-							key = "dailySold"
-							itemData[i] = itemData[i] / 100
-						end
-						extractedData[itemID][key] = itemData[i]
+		if realmAppData then
+			for _, itemData in ipairs(realmAppData.data) do
+				local itemID = itemData[1]
+				extractedData[itemID] = extractedData[itemID] or {}
+				for i=2, #itemData do
+					local key = realmAppData.fields[i]
+					if key == "dailySoldX100" then
+						key = "dailySold"
+						itemData[i] = itemData[i] / 100
 					end
+					extractedData[itemID][key] = itemData[i]
 				end
 			end
 		end
-		extractedData.lastUpdate = TSM.AppData.lastUpdate
+		if regionAppData then
+			for _, itemData in ipairs(regionAppData.data) do
+				local itemID = itemData[1]
+				extractedData[itemID] = extractedData[itemID] or {}
+				for i=2, #itemData do
+					local key = regionAppData.fields[i]
+					if key == "regionAvgDailyQuantityX100" then
+						key = "regionAvgDailyQuantity"
+						itemData[i] = itemData[i] / 100
+					end
+					extractedData[itemID][key] = itemData[i]
+				end
+			end
+		end
 	elseif TSM.data then
 		for realm, data in pairs(TSM.data) do
 			if strlower(realm) == CURRENT_REALM and data.alliance then
@@ -105,7 +122,7 @@ function TSM:OnEnable()
 		end
 	end
 	if not hasData then
-		TSM:Print(L["No wowuction data found. Go to the \"Data Export\" page for your realm on wowuction.com to download data."])
+		TSMAPI:ShowStaticPopupDialog("TSM_WOWUCTION_NO_DATA_POPUP")
 	end
 
 	TSM.data = nil

@@ -1,6 +1,7 @@
 local E, L, V, P, G = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
 local UF = E:NewModule('UnitFrames', 'AceTimer-3.0', 'AceEvent-3.0', 'AceHook-3.0');
 local LSM = LibStub("LibSharedMedia-3.0");
+local BG = LibStub("LibBodyguard-1.0");
 UF.LSM = LSM
 
 local _, ns = ...
@@ -43,17 +44,19 @@ UF['classMaxResourceBar'] = {
 }
 
 UF['mapIDs'] = {
-	[727] = 10, --Silvershard mines
-	[489] = 10, -- WSG
-	[628] = 40, -- Isle of Conquest
+	[30] = 40, -- Alterac Valley
+	[489] = 10, -- Warsong Gulch
+	[529] = 15, -- Arathi Basin
+	[566] = 15, -- Eye of the Storm
 	[607] = 15, -- Strand of the Ancients
+	[628] = 40, -- Isle of Conquest
 	[726] = 10, -- Twin Peaks
-	[30] = 40, -- AV
-	[529] = 15, -- AB
+	[727] = 10, -- Silvershard mines
+	[761] = 10, -- The Battle for Gilneas
+	[968] = 10, -- Rated Eye of the Storm
 	[998] = 10, -- Temple of Kotmogu
 	[1105] = 15, -- Deepwind Gourge
-	[761] = 10, -- Gilneas
-	[566] = 15, -- EOTS
+	[1280] = 40, -- Southshore vs. Tarren Mill
 }
 
 UF['headerGroupBy'] = {
@@ -266,7 +269,7 @@ end
 
 function UF:GetAuraAnchorFrame(frame, attachTo, isConflict)
 	if isConflict then
-		E:Print(format(L['%s frame(s) has a conflicting anchor point, please change either the buff or debuff anchor point so they are not attached to each other. Forcing the debuffs to be attached to the main unitframe until fixed.'], E:StringTitle(frame:GetName())))
+		E:Print(format(L["%s frame(s) has a conflicting anchor point, please change either the buff or debuff anchor point so they are not attached to each other. Forcing the debuffs to be attached to the main unitframe until fixed."], E:StringTitle(frame:GetName())))
 	end
 
 	if isConflict or attachTo == 'FRAME' then
@@ -405,6 +408,7 @@ function UF:Update_AllFrames()
 	self:UpdateColors()
 	self:Update_FontStrings()
 	self:Update_StatusBars()
+	BG:UpdateSettings()
 
 	for unit in pairs(self['units']) do
 		if self.db['units'][unit].enable then
@@ -726,15 +730,15 @@ function UF:CreateAndUpdateHeaderGroup(group, groupFilter, template, headerUpdat
 		local inInstance, instanceType = IsInInstance()
 		if(inInstance and (instanceType == 'raid' or instanceType == 'pvp')) then
 			local _, _, _, _, maxPlayers, _, _, mapID, maxPlayersInstance = GetInstanceInfo()
-			--[[if(maxPlayersInstance and maxPlayersInstance > 0) then
+			--[[if maxPlayersInstance > 0 then
 				maxPlayers = maxPlayersInstance
 			end]]
 
-			if mapID and UF.mapIDs[mapID] then
+			if UF.mapIDs[mapID] then
 				maxPlayers = UF.mapIDs[mapID]
 			end
 
-			if(maxPlayers > 0) then
+			if maxPlayers > 0 then
 				numGroups = E:Round(maxPlayers/5)
 				E:Print("Forcing maxGroups to: "..numGroups.." because maxPlayers is: "..maxPlayers)
 			end
@@ -934,12 +938,16 @@ function HideRaid()
 end
 
 function UF:DisableBlizzard(event)
-	hooksecurefunc("CompactRaidFrameManager_UpdateShown", HideRaid)
-	CompactRaidFrameManager:HookScript('OnShow', HideRaid)
-	CompactRaidFrameContainer:UnregisterAllEvents()
+	if not CompactRaidFrameManager_UpdateShown then
+		E:StaticPopup_Show("WARNING_BLIZZARD_ADDONS")
+	else
+		hooksecurefunc("CompactRaidFrameManager_UpdateShown", HideRaid)
+		CompactRaidFrameManager:HookScript('OnShow', HideRaid)
+		CompactRaidFrameContainer:UnregisterAllEvents()
 
-	HideRaid()
-	hooksecurefunc("CompactUnitFrame_RegisterEvents", CompactUnitFrame_UnregisterEvents)
+		HideRaid()
+		hooksecurefunc("CompactUnitFrame_RegisterEvents", CompactUnitFrame_UnregisterEvents)
+	end
 end
 
 local hiddenParent = CreateFrame("Frame")
@@ -1052,6 +1060,31 @@ end
 
 function UF:PLAYER_ENTERING_WORLD(event)
 	self:Update_AllFrames()
+
+    local showing = BG:IsShowing()
+
+    if not BG:Exists() and not BG.db.Active then
+        if showing then BG:HideFrame() end
+        return
+    end
+
+    if(not BG:IsValidZone()) then
+		BG:HideFrame()
+    elseif showing then
+        BG:UpdateSettings()
+    elseif BG:GetStatus() ~= BG.Status.Inactive and BG.db.Active then
+        BG:ShowFrame()
+    end
+end
+
+function UF:ZONE_CHANGED_NEW_AREA()
+    local validZone = BG:IsValidZone()
+    if not validZone then
+        if not BG:IsShowing() then return end
+		BG:HideFrame()
+    elseif BG.db.Active and BG:GetStatus() ~= BG.Status.Inactive then
+        BG:ShowFrame()
+    end
 end
 
 function UF:UnitFrameThreatIndicator_Initialize(_, unitFrame)
@@ -1074,6 +1107,7 @@ function UF:Initialize()
 
 	self:LoadUnits()
 	self:RegisterEvent('PLAYER_ENTERING_WORLD')
+	self:RegisterEvent('ZONE_CHANGED_NEW_AREA')
 
 	if E.private["unitframe"].disableBlizzard then
 		self:DisableBlizzard()
@@ -1115,6 +1149,33 @@ function UF:Initialize()
 	ORD.ShowDispelableDebuff = true
 	ORD.FilterDispellableDebuff = true
 	ORD.MatchBySpellName = true
+
+	ElvCharacterDB.BodyGuard = ElvCharacterDB.BodyGuard or {}
+	ElvCharacterDB.BodyGuard.MaxHealth = ElvCharacterDB.BodyGuard.MaxHealth or 0
+	ElvCharacterDB.BodyGuard.Health = ElvCharacterDB.BodyGuard.Health or 0
+	ElvCharacterDB.BodyGuard.Active = ElvCharacterDB.BodyGuard.Active or false
+
+	BG:UpdateFromBuilding()
+
+	BG:CreateFrame()
+	BG.LoginHealth = true
+	BG:RegisterCallback('guid', BG.GUIDUpdate)
+	BG:RegisterCallback('status', BG.StatusUpdate)
+	BG:RegisterCallback('name', BG.NameUpdate)
+	BG:RegisterCallback('level', BG.LevelUpdate)
+	BG:RegisterCallback('health', BG.HealthUpdate)
+	BG:RegisterCallback('gossip_opened', BG.GossipOpened)
+	BG:RegisterCallback('gossip_closed', BG.GossipClosed)
+	BG.db = ElvCharacterDB.BodyGuard
+
+    if type(BG.db.IsInValidZone) ~= "boolean" then
+        BG.db.IsInValidZone = BG:IsValidZone()
+    end
+
+	if BG.db.Active and BG.db.IsInValidZone then
+		BG:ShowFrame()
+        BG:HealthUpdate(BG.db.Health, BG.db.MaxHealth)
+    end
 end
 
 function UF:ResetUnitSettings(unit)
@@ -1196,7 +1257,7 @@ function UF:MergeUnitSettings(fromUnit, toUnit, isGroupUnit)
 			end
 		end
 	else
-		E:Print(L['You cannot copy settings from the same unit.'])
+		E:Print(L["You cannot copy settings from the same unit."])
 	end
 
 	self:Update_AllFrames()

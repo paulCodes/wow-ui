@@ -120,6 +120,11 @@ P['bags'] = {
 	['moneyFormat'] = 'SMART',
 	['moneyCoins'] = true,
 	['ignoreItems'] = '',
+	['itemLevel'] = true,
+	['itemLevelThreshold'] = 1,
+	['itemLevelFont'] = "ElvUI Pixel",
+	['itemLevelFontSize'] = 10,
+	['itemLevelFontOutline'] = "MONOCHROMEOUTLINE",
 	['bagBar'] = {
 		['growthDirection'] = 'VERTICAL',
 		['sortDirection'] = 'ASCENDING',
@@ -294,6 +299,7 @@ P['chat'] = {
 	['panelTabBackdrop'] = false,
 	['panelTabTransparency'] = false,
 	['editBoxPosition'] = 'BELOW_CHAT',
+	['fadeUndockedTabs'] = true,
 
 	['tabFont'] = 'ElvUI Pixel',
 	['tabFontSize'] = 10,
@@ -1117,6 +1123,14 @@ P['unitframe'] = {
 				['size'] = 8,
 				['fontSize'] = 10,
 			},
+			['castbar'] = {
+				['enable'] = true,
+				['width'] = 130,
+				['height'] = 18,
+				['icon'] = true,
+				['format'] = 'REMAINING',
+				['spark'] = true,
+			},
 		},
 		['pettarget'] = {
 			['enable'] = false,
@@ -1832,6 +1846,11 @@ P['unitframe'] = {
 				['xOffset'] = 0,
 				['yOffset'] = 10,
 			},
+		},
+		['bodyguard'] = {
+			['enable'] = true,
+			['width'] = 120,
+			['height'] = 28
 		},
 		['tank'] = {
 			['enable'] = true,
